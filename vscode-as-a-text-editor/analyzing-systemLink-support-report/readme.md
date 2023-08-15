@@ -9,7 +9,7 @@ SystemLink Reports serve as the primary starting point for troubleshooting Syste
 ## Prerequisites
 
 - Install the latest version of Visual Studio Code.
-- Install the Log File Highlighter extension by Emil Astrom. Follow the instructions in this [link](https://code.visualstudio.com/docs/editor/extension-marketplace#:~:text=You%20can%20browse%20and%20install,on%20the%20VS%20Code%20Marketplace.).
+- Install the [Log File Highlighter](https://marketplace.visualstudio.com/items?itemName=emilast.LogFileHighlighter) extension.
 
 > **Note:** While the instructions are provided for Windows, the process is similar for Mac and Linux.
 
