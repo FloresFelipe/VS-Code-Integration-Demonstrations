@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Attach to DLL Client",
+            "type": "cppvsdbg",
+            "request": "attach",
+            "processId": "${command:pickProcess}",
+            "symbolSearchPath": "${workspaceFolder}\\bin",
+            "stopAtEntry": false,
+            "justMyCode": false,
+            "sourceFileMap": {
+                "/mnt/c": "C:/"
+            }
+        }
+    ]
+}

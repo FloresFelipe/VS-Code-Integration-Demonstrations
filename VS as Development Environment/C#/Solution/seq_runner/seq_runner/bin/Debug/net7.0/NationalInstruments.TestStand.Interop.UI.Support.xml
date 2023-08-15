@@ -1,0 +1,1277 @@
+<?xml version="1.0"?><doc><members>
+    <member name="T:NationalInstruments.TestStand.Interop.UI.Support.MRUFiles">
+      <summary>A collection of the most recently used (MRU) files. Each item in the collection is a filename.</summary>
+      <seealso cref="&quot;ApplicationMgr.MRUFiles&quot;ApplicationMgr_MRUFiles_P.htm" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.MRUFiles.Item(System.Int32)">
+      <summary>Returns a reference to an item at the specified index in the collection.</summary>
+      <returns>Filename of the most recently used file at the specified index.</returns>
+      <param name="itemIndex">Specifies the index of the item to retrieve.</param>
+      <seealso cref="MRUFiles.Count" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.MRUFiles.Count">
+      <summary>Returns the number of items in the collection.</summary>
+      <seealso cref="MRUFiles.Max" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.MRUFiles.Max">
+      <summary>Specifies the maximum size of the collection.</summary>
+      <remarks>The MRUFiles collection cannot become larger than the size this property specifies. When the collection reaches the maximum size, new items you add to the beginning of the collection replace the oldest items at the end of the collection. The Application Manager control persists the value this property specifies.</remarks>
+      <seealso cref="&quot;Application Manager&quot;ApplicationMgr.htm" />
+      <seealso cref="MRUFiles.Add" />
+      <seealso cref="MRUFiles.Count" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.MRUFiles.Clear">
+      <summary>Removes all items from the collection.</summary>
+      <seealso cref="MRUFiles.Remove" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.MRUFiles.Remove(System.String)">
+      <summary>Removes the specified item from this collection, if it exists.</summary>
+      <returns>Returns <c>True</c> when the item is removed from the collection. Returns <c>False</c> when the item is not found.</returns>
+      <param name="fileNameVal">Specifies the filename to remove from the collection.</param>
+      <seealso cref="MRUFiles.Add" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.MRUFiles.GetDisplayName(System.Int32,System.Int32)">
+      <summary>Returns a string that you can display in a menu used for opening the most recently used files.</summary>
+      <returns>The display name of the filename at the index.</returns>
+      <param name="itemIndex">Specifies the index of an item.</param>
+      <param name="maxWidth">Specifies the maximum width, in pixels, of the display name string. The width of the string is measured using the system menu font.</param>
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.MRUFiles.Add(System.String)">
+      <summary>Adds a filename to the beginning of the collection.</summary>
+      <param name="fileNameVal">Specifies the filename to add to the collection.</param>
+      <seealso cref="MRUFiles.Max" />
+      <seealso cref="MRUFiles.Remove" />
+    </member>
+    <member name="T:NationalInstruments.TestStand.Interop.UI.Support.SelectedSteps">
+      <summary>A collection of selected steps. You can obtain a reference to the collection from the SequenceFileViewMgr.SelectedSteps and ExecutionViewMgr.SelectedSteps properties.</summary>
+      <seealso cref="&quot;ExecutionViewMgr.SelectedSteps&quot;ExecutionViewMgr_SelectedSteps_P.htm" />
+      <seealso cref="&quot;SequenceFileViewMgr.SelectedSteps&quot;SequenceFileViewMgr_SelectedSteps_P.htm" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.SelectedSteps.Item(System.Int32)">
+      <summary>Returns a reference to an item at the specified index in the collection.</summary>
+      <returns>The step at the specified index in the collection.	</returns>
+      <param name="itemIndex">Specifies the index of the item to retrieve.</param>
+      <seealso cref="&quot;Step&quot;javascript:APILink('/RefTopics/Step.htm')" />
+      <seealso cref="SelectedSteps.Count" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.SelectedSteps.Count">
+      <summary>Returns the number of items in the collection.</summary>
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.SelectedSteps.Clear">
+      <summary>Removes all items from the collection.</summary>
+      <seealso cref="SelectedSteps.AddStep" />
+      <seealso cref="SelectedSteps.AddStepIndex" />
+      <seealso cref="SelectedSteps.AddSteps" />
+      <seealso cref="SelectedSteps.EndSelected" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.SelectedSteps.AddStepIndex(System.Int32)">
+      <summary>Adds a step to the collection.</summary>
+      <remarks>When the SequenceFileViewMgr.StepGroupMode property is <c>StepGroupMode_AllGroups</c>, call the SelectedSteps.AddStep method instead of this method.</remarks>
+      <param name="stepIndex">Specifies the index in the current step group of the step to add.</param>
+      <seealso cref="SelectedSteps.AddStep" />
+      <seealso cref="SelectedSteps.EndSelected" />
+      <seealso cref="SequenceFileViewMgr.StepGroup" />
+      <seealso cref="SequenceFileViewMgr.StepGroupMode" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.SelectedSteps.EndSelected">
+      <summary>Specifies whether the End step is selected.</summary>
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.SelectedSteps.GetStepIndex(System.Int32)">
+      <summary>Retrieves the step index within a step group of a selected step.</summary>
+      <returns>The step index of the step in the collection.</returns>
+      <param name="nthSelectedStep">Specifies the index of a step in the collection.</param>
+      <seealso cref="SelectedSteps.EndSelected" />
+      <seealso cref="SelectedSteps.GetStepGroup" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.SelectedSteps.GetStepGroup(System.Int32)">
+      <summary>Returns the step group of the specified step in the collection.</summary>
+      <param name="nthSelectedStep">Specifies the index of a step in the collection.</param>
+      <seealso cref="SelectedSteps.GetStepIndex" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.SelectedSteps.AddStep(NationalInstruments.TestStand.Interop.API.Step)">
+      <summary>Adds a step to the collection.</summary>
+      <param name="val">Specifies the step to add.</param>
+      <seealso cref="SelectedSteps.AddStepIndex" />
+      <seealso cref="SelectedSteps.AddSteps" />
+      <seealso cref="SelectedSteps.Clear" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.SelectedSteps.AddSteps(System.Object[])">
+      <summary>Adds an array of steps to the collection.</summary>
+      <param name="val">Specifies the steps to add.</param>
+      <seealso cref="SelectedSteps.AddStepIndex" />
+      <seealso cref="SelectedSteps.AddSteps" />
+      <seealso cref="SelectedSteps.Clear" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.SelectedSteps.SelectionFlags">
+      <summary>When the SequenceFileViewMgr.StepGroupMode property is <c>StepGroupMode_AllGroups</c>, this property indicates whether the selection includes the step group start and end markers. The property also indicates whether each step group is expanded or collapsed. The value of this property is a bitwise-OR combination of the SelectionFlags constants.</summary>
+      <seealso cref="SelectionFlags" />
+      <seealso cref="SequenceFileViewMgr.StepGroupMode" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.SelectedSteps.BeginUpdate">
+      <summary>Call this method before making multiple changes to the SelectedSteps collection. When you finish changing the collection, call the SelectedSteps.EndUpdate method to update the TestStand User Interface (UI) Controls according to the changes.</summary>
+      <remarks>Use this method to minimize redrawing in the TestStand UI Controls when you programmatically change the selection.</remarks>
+      <seealso cref="SelectedSteps.EndUpdate" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.SelectedSteps.EndUpdate">
+      <summary>Updates the user interface according to all changes to the SelectedSteps collection you made after the previous call to the SelectedSteps.BeginUpdate method.</summary>
+      <seealso cref="SelectedSteps.BeginUpdate" />
+    </member>
+    <member name="T:NationalInstruments.TestStand.Interop.UI.Support.Strings">
+      <summary>A collection of strings. You can obtain a reference to the collection from the ApplicationMgr.CommandLineArguments property, the ExpressionEdit.GetValidEvaluationTypes, and ExpressionEdit.SetValidEvaluationTypes methods, and the ApplicationMgr.ProcessUserCommandLineArguments event.</summary>
+      <seealso cref="&quot;ApplicationMgr.CommandLineArguments&quot;ApplicationMgr_CommandLineArguments_P.htm" />
+      <seealso cref="&quot;ApplicationMgr.ProcessUserCommandLineArguments&quot;ApplicationMgr_ProcessUserCommandLineArguments_E.htm" />
+      <seealso cref="&quot;EvaluationTypes.AllowedArrayRepresentations&quot;javascript:APILink('/RefTopics/EvaluationTypes_AllowedArrayRepresentations_P.htm')" />
+      <seealso cref="&quot;EvaluationTypes.AllowedRepresentations&quot;javascript:APILink('/RefTopics/EvaluationTypes_AllowedRepresentations_P.htm')" />
+      <seealso cref="&quot;ExpressionEdit.GetValidEvaluationTypes&quot;ExpressionEdit_GetValidEvaluationTypes_M.htm" />
+      <seealso cref="&quot;ExpressionEdit.SetValidEvaluationTypes&quot;ExpressionEdit_SetValidEvaluationTypes_M.htm" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.Strings.Item(System.Int32)">
+      <summary>Returns a reference to an item at the specified index in the collection.</summary>
+      <returns>The item at the specified index.</returns>
+      <param name="itemIndex">Specifies the index of the item to retrieve.</param>
+      <seealso cref="Strings.Count" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.Strings.Count">
+      <summary>Returns the number of items in the collection.</summary>
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.Strings.Clear">
+      <summary>Removes all items from the collection.</summary>
+      <seealso cref="Strings.Remove" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.Strings.Add(System.String)">
+      <summary>Adds a string to the end of the collection.</summary>
+      <param name="val">Specifies the string to be added.</param>
+      <seealso cref="Strings.Insert" />
+      <seealso cref="Strings.Remove" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.Strings.Insert(System.Int32,System.String)">
+      <summary>Adds a new item to the collection at the specified index.</summary>
+      <param name="itemIndex">Specifies the index of the item to insert.</param>
+      <param name="val">Specifies the string to be added.</param>
+      <seealso cref="Strings.Add" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.Strings.Remove(System.Int32)">
+      <summary>Removes the specified item from this collection, if it exists.</summary>
+      <param name="itemIndex">Specifies the index of the item to remove.</param>
+      <seealso cref="Strings.Add" />
+    </member>
+    <member name="T:NationalInstruments.TestStand.Interop.UI.Support.NumericConnection">
+      <summary>Represents a connection to a numeric source.</summary>
+      <seealso cref="NumericConnections" />
+      <seealso cref="&quot;NumericSources&quot;NumericSources.htm" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.NumericConnection.Source">
+      <summary>NumericSource of the connection.</summary>
+      <seealso cref="ExecutionViewMgr" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.NumericConnection.Refresh">
+      <summary>Refreshes the connected control with the current value of the NumericSource.</summary>
+    </member>
+    <member name="T:NationalInstruments.TestStand.Interop.UI.Support.NumericConnections">
+      <summary>A collection of NumericConnection objects.</summary>
+      <seealso cref="&quot;ExecutionViewMgr.ConnectNumeric&quot;ExecutionViewMgr_ConnectNumeric_M.htm" />
+      <seealso cref="NumericConnection" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.NumericConnections.Item(System.Int32)">
+      <summary>Returns a reference to an item at the specified index in the collection.</summary>
+      <returns>Item located at the specified index.</returns>
+      <param name="itemIndex">Specifies the index of the item to retrieve.</param>
+      <seealso cref="NumericConnection" />
+      <seealso cref="NumericConnections.Count" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.NumericConnections.Count">
+      <summary>Returns the number of items in the collection.</summary>
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.NumericConnections.Add(System.Object)">
+      <summary>Creates and adds a new NumericConnection to the collection.</summary>
+      <returns>New NumericConnection.</returns>
+      <param name="uiObj">Specifies the user interface object to connect.</param>
+      <seealso cref="&quot;ExecutionViewMgr.ConnectNumeric&quot;ExecutionViewMgr_ConnectNumeric_M.htm" />
+      <seealso cref="NumericConnections.Remove" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.NumericConnections.Remove(System.Object)">
+      <summary>Removes the specified item from this collection, if it exists.</summary>
+      <returns>Returns <c>True</c> when the NumericConnection is removed. Returns <c>False</c> when the NumericConnection is not found.</returns>
+      <param name="uiObj">Specifies the user interface object to disconnect.</param>
+      <seealso cref="NumericConnections.Add" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.NumericConnections.Clear">
+      <summary>Removes all items from the collection.</summary>
+      <seealso cref="NumericConnections.Remove" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.NumericConnections.FromControl(System.Object)">
+      <summary>Returns the NumericConnection connected to the uiObj parameter.</summary>
+      <returns>NumericConnection connected to the uiObj parameter. When no NumericConnection exists for this control, this method returns <c>NULL</c>.</returns>
+      <param name="uiObj">Specifies the connected user interface object.</param>
+    </member>
+    <member name="T:NationalInstruments.TestStand.Interop.UI.Support.ImageConnection">
+      <summary>Represents a connection to an image source.</summary>
+      <seealso cref="ImageConnections" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.ImageConnection.Source">
+      <summary>Specifies the type of ImageConnection to obtain an image from.</summary>
+      <seealso cref="ExecutionViewMgr" />
+      <seealso cref="SequenceFileViewMgr" />
+    </member>
+    <member name="T:NationalInstruments.TestStand.Interop.UI.Support.ImageConnections">
+      <summary>A collection of ImageConnection objects.</summary>
+      <seealso cref="&quot;ExecutionViewMgr.ConnectImage&quot;ExecutionViewMgr_ConnectImage_M.htm" />
+      <seealso cref="ImageConnection" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.ImageConnections.Item(System.Int32)">
+      <summary>Returns a reference to an item at the specified index in the collection.</summary>
+      <returns>Item located at the specified index.</returns>
+      <param name="itemIndex">Specifies the index of the item to retrieve.</param>
+      <seealso cref="ImageConnection" />
+      <seealso cref="ImageConnections.Count" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.ImageConnections.Count">
+      <summary>Returns the number of items in the collection.</summary>
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.ImageConnections.Add(System.Object)">
+      <summary>Creates and adds a new ImageConnection to the collection.</summary>
+      <returns>New ImageConnection.</returns>
+      <param name="uiObj">Specifies the user interface object to connect.</param>
+      <seealso cref="&quot;ExecutionViewMgr.ConnectImage&quot;ExecutionViewMgr_ConnectImage_M.htm" />
+      <seealso cref="ImageConnections.Remove" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.ImageConnections.Remove(System.Object)">
+      <summary>Removes the specified item from this collection, if it exists.</summary>
+      <returns>Returns <c>True</c> when the ImageConnection is removed. Returns <c>False</c> when the ImageConnection is not found.</returns>
+      <param name="uiObj">Specifies the user interface object to disconnect.</param>
+      <seealso cref="ImageConnections.Add" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.ImageConnections.Clear">
+      <summary>Removes all items from the collection.</summary>
+      <seealso cref="ImageConnections.Remove" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.ImageConnections.FromControl(System.Object)">
+      <summary>Returns the ImageConnection connected to the uiObj parameter.</summary>
+      <returns>ImageConnection connected to the uiObj parameter. When no ImageConnection exists for this control, this method returns <c>NULL</c>.</returns>
+      <param name="uiObj">Specifies the connected user interface object.</param>
+    </member>
+    <member name="T:NationalInstruments.TestStand.Interop.UI.Support.CaptionConnection">
+      <summary>Represents a connection to a caption source.</summary>
+      <seealso cref="CaptionConnections" />
+      <seealso cref="&quot;CaptionSources&quot;CaptionSources.htm" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.CaptionConnection.Source">
+      <summary>Specifies the type of caption source to obtain the text from.</summary>
+      <seealso cref="&quot;CaptionSources&quot;CaptionSources.htm" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.CaptionConnection.LongName">
+      <summary>For certain caption sources, this property specifies whether to return a long or short version of the caption text. Refer to the CaptionSources enumeration for more information about determining when this option affects the text and for more information about the long and short versions of the text.</summary>
+      <seealso cref="&quot;CaptionSources&quot;CaptionSources.htm" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.CaptionConnection.FormatExpression">
+      <summary>Specifies a format expression to evaluate when generating the caption text.</summary>
+      <remarks>For CaptionSource_MacroExpression, specify a format expression that evaluates to a string value that contains macros that specify other caption sources. For all other caption sources, specify a format expression that evaluates to a string value that contains the characters <c>%1</c>. This method replaces the <c>%1</c> characters with the text from the caption source. Pass an empty string to use the default format for the caption source.</remarks>
+      <seealso cref="&quot;CaptionSource_MacroExpression&quot;CaptionSources.htm" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.CaptionConnection.Refresh">
+      <summary>Refreshes the user interface control connected to this CaptionConnection with the most recent text from the CaptionSource.</summary>
+    </member>
+    <member name="T:NationalInstruments.TestStand.Interop.UI.Support.CaptionConnections">
+      <summary>A collection of CaptionConnection objects.</summary>
+      <seealso cref="CaptionConnection" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.CaptionConnections.Item(System.Int32)">
+      <summary>Returns a reference to an item at the specified index in the collection.</summary>
+      <returns>Item located at the specified index.</returns>
+      <param name="itemIndex">Specifies the index of the item to retrieve.</param>
+      <seealso cref="CaptionConnection" />
+      <seealso cref="CaptionConnections.Count" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.CaptionConnections.Count">
+      <summary>Returns the number of items in the collection.</summary>
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.CaptionConnections.Add(System.Object)">
+      <summary>Creates and adds a new CaptionConnection to the collection.</summary>
+      <returns>New CaptionConnection.</returns>
+      <param name="uiObj">Specifies the user interface object to connect.</param>
+      <seealso cref="&quot;ApplicationMgr.ConnectCaption&quot;ApplicationMgr_ConnectCaption_M.htm" />
+      <seealso cref="CaptionConnections.Remove" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.CaptionConnections.Remove(System.Object)">
+      <summary>Removes the specified item from this collection, if it exists.</summary>
+      <returns>Returns <c>True</c> when the CaptionConnection is removed. Returns <c>False</c> when the CaptionConnection is not found.</returns>
+      <param name="uiObj">Specifies the user interface object to disconnect.</param>
+      <seealso cref="CaptionConnections.Add" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.CaptionConnections.Clear">
+      <summary>Removes all items from the collection.</summary>
+      <seealso cref="CaptionConnections.Remove" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.CaptionConnections.FromControl(System.Object)">
+      <summary>Returns the CaptionConnection connected to the uiObj parameter.</summary>
+      <returns>CaptionConnection connected to the uiObj parameter. When no CaptionConnection exists for this control, this method returns <c>NULL</c>.</returns>
+      <param name="uiObj">Specifies the connected user interface object.</param>
+    </member>
+    <member name="T:NationalInstruments.TestStand.Interop.UI.Support.CommandConnection">
+      <summary>Represents a connection to a CommandKind.</summary>
+      <seealso cref="&quot;CommandConnectionOptions&quot;CommandConnectionOptions.htm" />
+      <seealso cref="CommandConnections" />
+      <seealso cref="&quot;CommandKinds&quot;CommandKinds.htm" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.CommandConnection.Kind">
+      <summary>Specifies the type of Command to which this CommandConnection connects.</summary>
+      <seealso cref="&quot;CommandKinds&quot;CommandKinds.htm" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.CommandConnection.Index">
+      <summary>Specifies which command in the set of commands to use.</summary>
+      <remarks><para>Note: Use this on sets of commands. Refer to the CommandKinds enumeration for more information about supported command sets.</para></remarks>
+      <seealso cref="&quot;CommandKinds&quot;CommandKinds.htm" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.CommandConnection.Options">
+      <summary>Specifies the behavior of the CommandConnection.</summary>
+      <remarks>The value of this property is a bitwise-OR combination of the CommandConnectionOptions constants.</remarks>
+      <seealso cref="&quot;CommandConnectionOptions&quot;CommandConnectionOptions.htm" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.CommandConnection.Refresh">
+      <summary>Refreshes the state of the user interface control connected to the CommandConnection.</summary>
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.CommandConnection.FreezeRefresh(System.Boolean)">
+      <summary>Specifies to freeze the CommandConnection when setting the properties to avoid flicker on the connected control.</summary>
+      <remarks><c>FreezeRefresh</c> calls must be balanced. For example, each time you call this method with a value of <c>True</c>, you must also call it with a value of <c>False</c>.</remarks>
+      <param name="frz">When this parameter is <c>True</c>, the CommandConnection does not refresh the control. When this parameter is <c>False</c>, the CommandConnection refreshes the control.</param>
+    </member>
+    <member name="T:NationalInstruments.TestStand.Interop.UI.Support.CommandConnections">
+      <summary>A collection of CommandConnection objects.</summary>
+      <seealso cref="CommandConnection" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.CommandConnections.Item(System.Int32)">
+      <summary>Returns a reference to an item at the specified index in the collection.</summary>
+      <returns>Item located at the specified index.</returns>
+      <param name="itemIndex">Specifies the index of the item to retrieve.</param>
+      <seealso cref="CommandConnection" />
+      <seealso cref="CommandConnections.Count" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.CommandConnections.Count">
+      <summary>Returns the number of items in the collection.</summary>
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.CommandConnections.Add(System.Object)">
+      <summary>Creates and adds a new CommandConnection to the collection.</summary>
+      <returns>New CommandConnection.</returns>
+      <param name="uiObj">Specifies the user interface object to connect.</param>
+      <seealso cref="&quot;ApplicationMgr.ConnectCommand&quot;ApplicationMgr_ConnectCommand_M.htm" />
+      <seealso cref="CommandConnections.Remove" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.CommandConnections.Remove(System.Object)">
+      <summary>Removes the specified item from this collection, if it exists.</summary>
+      <returns>Returns <c>True</c> when the CommandConnection is removed. Returns <c>False</c> when the CommandConnection is not found.</returns>
+      <param name="uiObj">Specifies the user interface object to disconnect.</param>
+      <seealso cref="CommandConnections.Add" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.CommandConnections.Clear">
+      <summary>Removes all items from the collection.</summary>
+      <seealso cref="CommandConnections.Remove" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.CommandConnections.FromControl(System.Object)">
+      <summary>Returns the CommandConnection connected to the uiObj parameter.</summary>
+      <returns>CommandConnection connected to the uiObj parameter. When no CommandConnection exists for this control, this method returns <c>NULL</c>.</returns>
+      <param name="uiObj">Specifies the connected user interface object.</param>
+    </member>
+    <member name="T:NationalInstruments.TestStand.Interop.UI.Support.SequenceViewConnection">
+      <summary>Represents a connection from a SequenceFileView Manager control to a SequenceView control. The SequenceView control shows the contents of the current sequence in the SequenceFileView Manager control. Use the SequenceFileViewMgr.Connections property to obtain a collection of SequenceViewConnection objects.</summary>
+      <seealso cref="&quot;SequenceFileView Manager&quot;SequenceFileViewMgr.htm" />
+      <seealso cref="&quot;SequenceFileViewMgr.Connections&quot;SequenceFileViewMgr_Connections_P.htm" />
+      <seealso cref="&quot;SequenceView&quot;SequenceView.htm" />
+      <seealso cref="SequenceViewConnections" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.SequenceViewConnection.UIControl">
+      <summary>Returns the user interface control the connection connects to a SequenceFileView Manager control.</summary>
+      <seealso cref="&quot;SequenceFileView Manager&quot;SequenceFileViewMgr.htm" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.SequenceViewConnection.DoubleClickEditsStepProperties">
+      <summary>Specifies whether the connected SequenceView control displays the Step Properties dialog box when editing is enabled and the user double-clicks a step. This property defaults to <c>True</c>. Set the property to <c>False</c> if you implement an alternate behavior for double-clicking a step in a sequence file.</summary>
+      <seealso cref="&quot;SequenceView&quot;SequenceView.htm" />
+      <seealso cref="&quot;Step Properties dialog box&quot;javascript:RefLink('/InfoTopics/DB_Step_Prop.htm')" />
+    </member>
+    <member name="T:NationalInstruments.TestStand.Interop.UI.Support.SequenceViewConnections">
+      <summary>A collection of SequenceViewConnection objects you obtain by calling  the SequenceFileViewMgr.Connections property.</summary>
+      <seealso cref="&quot;SequenceFileViewMgr.ConnectSequenceView&quot;SequenceFileViewMgr_ConnectSequenceView_M.htm" />
+      <seealso cref="&quot;SequenceFileViewMgr.Connections&quot;SequenceFileViewMgr_Connections_P.htm" />
+      <seealso cref="SequenceViewConnection" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.SequenceViewConnections.Item(System.Int32)">
+      <summary>Returns a reference to an item at the specified index in the collection.</summary>
+      <returns>Item located at the specified index.</returns>
+      <param name="itemIndex">Specifies the index of the item to retrieve.</param>
+      <seealso cref="SequenceViewConnection" />
+      <seealso cref="SequenceViewConnections.Count" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.SequenceViewConnections.Count">
+      <summary>Returns the number of items in the collection.</summary>
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.SequenceViewConnections.Add(System.Object)">
+      <summary>Creates and adds a new SequenceViewConnection to the collection.</summary>
+      <returns>New SequenceViewConnection.</returns>
+      <param name="uiObj">Specifies the user interface object to connect.</param>
+      <seealso cref="&quot;SequenceFileViewMgr.ConnectSequenceView&quot;SequenceFileViewMgr_ConnectSequenceView_M.htm" />
+      <seealso cref="SequenceViewConnections.Remove" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.SequenceViewConnections.Remove(System.Object)">
+      <summary>Removes the specified item from this collection, if it exists.</summary>
+      <returns>Returns <c>True</c> when the SequenceViewConnection is removed. Returns <c>False</c> when the SequenceViewConnection is not found.</returns>
+      <param name="uiObj">Specifies the user interface object to disconnect.</param>
+      <seealso cref="SequenceViewConnections.Add" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.SequenceViewConnections.Clear">
+      <summary>Removes all items from the collection.</summary>
+      <seealso cref="SequenceViewConnections.Remove" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.SequenceViewConnections.FromControl(System.Object)">
+      <summary>Returns the SequenceViewConnection connected to the uiObj parameter.</summary>
+      <returns>SequenceViewConnection connected to the uiObj parameter. When no SequenceViewConnection exists for this control, this method returns <c>NULL</c>.</returns>
+      <param name="uiObj">Specifies the connected user interface object.</param>
+    </member>
+    <member name="T:NationalInstruments.TestStand.Interop.UI.Support.SequenceFileListConnection">
+      <summary>Represents a connection from a SequenceFileView Manager control to a control that displays a list of open sequence files. Use the connected control to select a sequence file to open in the SequenceFileView Manager control from the list of sequence files.</summary>
+      <seealso cref="SequenceFileListConnections" />
+      <seealso cref="&#xD;&#xA;&quot;SequenceFileView Manager&quot;SequenceFileViewMgr.htm" />
+      <seealso cref="&#xD;&#xA;&quot;SequenceFileViewMgr.ConnectSequenceFileList&quot;SequenceFileViewMgr_ConnectSequenceFileList_M.htm" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.SequenceFileListConnection.ShowFullPath">
+      <summary>When this property is <c>True</c>, the connected control displays the full path for all sequence files. Otherwise, the connected control displays only filenames.</summary>
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.SequenceFileListConnection.ShowCommentInTip">
+      <summary>Specifies whether the item tooltip includes the sequence file comment in controls you connect to display the list of loaded sequence files.</summary>
+    </member>
+    <member name="T:NationalInstruments.TestStand.Interop.UI.Support.SequenceFileListConnections">
+      <summary>A collection of SequenceFileListConnection objects.</summary>
+      <seealso cref="SequenceFileListConnection" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.SequenceFileListConnections.Item(System.Int32)">
+      <summary>Returns a reference to an item at the specified index in the collection.</summary>
+      <returns>Item located at the specified index.</returns>
+      <param name="itemIndex">Specifies the index of the item to retrieve.</param>
+      <seealso cref="SequenceFileListConnection" />
+      <seealso cref="SequenceFileListConnections.Count" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.SequenceFileListConnections.Count">
+      <summary>Returns the number of items in the collection.</summary>
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.SequenceFileListConnections.Add(System.Object)">
+      <summary>Creates and adds a new SequenceFileListConnection to the collection.</summary>
+      <returns>New SequenceFileListConnection.</returns>
+      <param name="uiObj">Specifies the user interface object to connect.</param>
+      <seealso cref="SequenceFileListConnections.Remove" />
+      <seealso cref="&quot;SequenceFileViewMgr.ConnectSequenceFileList&quot;SequenceFileViewMgr_ConnectSequenceFileList_M.htm" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.SequenceFileListConnections.Remove(System.Object)">
+      <summary>Removes the specified item from this collection, if it exists.</summary>
+      <returns>Returns <c>True</c> when the SequenceFileListConnection is removed. Returns <c>False</c> when the SequenceFileListConnection is not found.</returns>
+      <param name="uiObj">Specifies the user interface object to disconnect.</param>
+      <seealso cref="SequenceFileListConnections.Add" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.SequenceFileListConnections.Clear">
+      <summary>Removes all items from the collection.</summary>
+      <seealso cref="SequenceFileListConnections.Remove" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.SequenceFileListConnections.FromControl(System.Object)">
+      <summary>Returns the SequenceFileListConnection connected to the uiObj parameter.</summary>
+      <returns>SequenceFileListConnection connected to the uiObj parameter. When no SequenceFileListConnection exists for this control, this method returns <c>NULL</c>.</returns>
+      <param name="uiObj">Specifies the connected user interface object.</param>
+    </member>
+    <member name="T:NationalInstruments.TestStand.Interop.UI.Support.SequenceListConnection">
+      <summary>Represents a connection from a SequenceFileView Manager control to a control that displays a list of sequences for the current sequence file. Use the connected control to select the sequence to display.</summary>
+      <seealso cref="SequenceListConnections" />
+      <seealso cref="&quot;SequenceFileView Manager&quot;SequenceFileViewMgr.htm" />
+      <seealso cref="&quot;SequenceFileViewMgr.ConnectSequenceList&quot;SequenceFileViewMgr_ConnectSequenceList_M.htm" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.SequenceListConnection.UIControl">
+      <summary>Returns the user interface control the connection connects to a SequenceFileView Manager control.</summary>
+      <seealso cref="&quot;SequenceFileView Manager&quot;SequenceFileViewMgr.htm" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.SequenceListConnection.GetColumnVisible(NationalInstruments.TestStand.Interop.UI.Support.SeqListConnectionColumns)">
+      <summary>Returns a Boolean value that indicates whether the column is visible.</summary>
+      <param name="column">Specifies the column to select.</param>
+      <seealso cref="SequenceListConnection.SetColumnVisible" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.SequenceListConnection.SetColumnVisible(NationalInstruments.TestStand.Interop.UI.Support.SeqListConnectionColumns,System.Boolean)">
+      <summary>Specifies whether the column is visible.</summary>
+      <remarks>You cannot hide the <c>SeqListConnectionColumn_Label</c> column.</remarks>
+      <param name="column">Specifies the column to select.</param>
+      <param name="val">Pass <c>False</c> to hide the column. Otherwise, the column is visible. </param>
+      <seealso cref="SequenceListConnection.GetColumnVisible" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.SequenceListConnection.ShowCommentInTip">
+      <summary>Specifies whether the item tooltip includes the sequence comment in controls you connect to display the list of sequences in the selected sequence file.</summary>
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.SequenceListConnection.GetColumnIndex(NationalInstruments.TestStand.Interop.UI.Support.SeqListConnectionColumns)">
+      <summary>When the specified column is visible, this method returns the index of the column within the ListBoxColumns collection. Otherwise, this method returns <c>-1</c>.</summary>
+      <remarks>Use this index in the ListBoxColumns.Item property to return the ListBoxColumn for a specific column.</remarks>
+      <param name="column">Specifies the column to select.</param>
+      <seealso cref="&quot;ListBox.ColumnSet&quot;ListBox_ColumnSet_P.htm" />
+      <seealso cref="&quot;ListBoxColumn&quot;ListBoxColumn.htm" />
+      <seealso cref="&quot;ListBoxColumns&quot;ListBoxColumns.htm" />
+      <seealso cref="&quot;ListBoxColumns.Item&quot;ListBoxColumns_Item_P.htm" />
+      <seealso cref="SequenceListConnection.GetColumnVisible" />
+    </member>
+    <member name="T:NationalInstruments.TestStand.Interop.UI.Support.SequenceListConnections">
+      <summary>A collection of SequenceListConnection objects.</summary>
+      <seealso cref="&quot;SequenceFileViewMgr.ConnectSequenceList&quot;SequenceFileViewMgr_ConnectSequenceList_M.htm" />
+      <seealso cref="SequenceListConnection" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.SequenceListConnections.Item(System.Int32)">
+      <summary>Returns a reference to an item at the specified index in the collection.</summary>
+      <returns>Item located at the specified index.</returns>
+      <param name="itemIndex">Specifies the index of the item to retrieve.</param>
+      <seealso cref="SequenceListConnection" />
+      <seealso cref="SequenceListConnections.Count" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.SequenceListConnections.Count">
+      <summary>Returns the number of items in the collection.</summary>
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.SequenceListConnections.Add(System.Object)">
+      <summary>Creates and adds a new SequenceListConnection to the collection.</summary>
+      <returns>New SequenceListConnection.</returns>
+      <param name="uiObj">Specifies the user interface object to connect.</param>
+      <seealso cref="&quot;SequenceFileViewMgr.ConnectSequenceList&quot;SequenceFileViewMgr_ConnectSequenceList_M.htm" />
+      <seealso cref="SequenceListConnections.Remove" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.SequenceListConnections.Remove(System.Object)">
+      <summary>Removes the specified item from this collection, if it exists.</summary>
+      <returns>Returns <c>True</c> when the SequenceListConnection is removed. Returns <c>False</c> when the SequenceListConnection is not found.</returns>
+      <param name="uiObj">Specifies the user interface object to disconnect.</param>
+      <seealso cref="SequenceListConnections.Add" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.SequenceListConnections.Clear">
+      <summary>Removes all items from the collection.</summary>
+      <seealso cref="SequenceListConnections.Remove" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.SequenceListConnections.FromControl(System.Object)">
+      <summary>Returns the SequenceListConnection connected to the uiObj parameter.</summary>
+      <returns>SequenceListConnection connected to the uiObj parameter. When no SequenceListConnection exists for this control, this method returns <c>NULL</c>.</returns>
+      <param name="uiObj">Specifies the connected user interface object.</param>
+    </member>
+    <member name="T:NationalInstruments.TestStand.Interop.UI.Support.StepGroupListConnection">
+      <summary>Represents a connection from a SequenceFileView Manager control to a control that displays the list of step groups. Use the connected control to select the step group for the current sequence.
+<para>Note: This class currently contains no properties or methods. Properties or methods might be added to this class in future versions of TestStand.</para></summary>
+      <seealso cref="&quot;SequenceFileView Manager&quot;SequenceFileViewMgr.htm" />
+      <seealso cref="StepGroupListConnections" />
+    </member>
+    <member name="T:NationalInstruments.TestStand.Interop.UI.Support.StepGroupListConnections">
+      <summary>A collection of StepGroupListConnection objects.</summary>
+      <seealso cref="&quot;SequenceFileViewMgr.ConnectStepGroupList&quot;SequenceFileViewMgr_ConnectStepGroupList_M.htm" />
+      <seealso cref="StepGroupListConnection" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.StepGroupListConnections.Item(System.Int32)">
+      <summary>Returns a reference to an item at the specified index in the collection.</summary>
+      <returns>Item located at the specified index.</returns>
+      <param name="itemIndex">Specifies the index of the item to retrieve.</param>
+      <seealso cref="StepGroupListConnection" />
+      <seealso cref="StepGroupListConnections.Count" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.StepGroupListConnections.Count">
+      <summary>Returns the number of items in the collection.</summary>
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.StepGroupListConnections.Add(System.Object)">
+      <summary>Creates and adds a new StepGroupListConnection to the collection.</summary>
+      <returns>New StepGroupListConnection.</returns>
+      <param name="uiObj">Specifies the user interface object to connect.</param>
+      <seealso cref="&quot;SequenceFileViewMgr.ConnectStepGroupList&quot;SequenceFileViewMgr_ConnectStepGroupList_M.htm" />
+      <seealso cref="StepGroupListConnections.Remove" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.StepGroupListConnections.Remove(System.Object)">
+      <summary>Removes the specified item from this collection, if it exists.</summary>
+      <returns>Returns <c>True</c> when the StepGroupListConnection is removed. Returns <c>False</c> when the StepGroupListConnection is not found.</returns>
+      <param name="uiObj">Specifies the user interface object to disconnect.</param>
+      <seealso cref="StepGroupListConnections.Add" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.StepGroupListConnections.Clear">
+      <summary>Removes all items from the collection.</summary>
+      <seealso cref="StepGroupListConnections.Remove" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.StepGroupListConnections.FromControl(System.Object)">
+      <summary>Returns the StepGroupListConnection connected to the uiObj parameter.</summary>
+      <returns>StepGroupListConnection connected to the uiObj parameter. When no StepGroupListConnection exists for this control, this method returns <c>NULL</c>.</returns>
+      <param name="uiObj">Specifies the connected user interface object.</param>
+    </member>
+    <member name="T:NationalInstruments.TestStand.Interop.UI.Support.SequenceFileViewMgrConnections">
+      <summary>Contains the connections for the SequenceFileView Manager control.</summary>
+      <seealso cref="ApplicationMgrConnections" />
+      <seealso cref="ExecutionViewMgrConnections" />
+      <seealso cref="&quot;SequenceFileView Manager&quot;SequenceFileViewMgr.htm" />
+      <seealso cref="&quot;SequenceFileViewMgr.Connections&quot;SequenceFileViewMgr_Connections_P.htm" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.SequenceFileViewMgrConnections.Variables">
+      <summary>Collection of VariablesConnection objects.</summary>
+      <seealso cref="SequenceFileViewMgr.ConnectVariables" />
+      <seealso cref="VariablesConnection" />
+      <seealso cref="VariablesConnections" />
+      <seealso cref="&#xD;&#xA;" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.SequenceFileViewMgrConnections.SequenceFileList">
+      <summary>Collection of SequenceFileListConnection objects.</summary>
+      <seealso cref="SequenceFileListConnection" />
+      <seealso cref="SequenceFileListConnections" />
+      <seealso cref="&quot;SequenceFileViewMgr.ConnectSequenceFileList&quot;SequenceFileViewMgr_ConnectSequenceFileList_M.htm" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.SequenceFileViewMgrConnections.SequenceList">
+      <summary>Collection of SequenceListConnection objects.</summary>
+      <seealso cref="&quot;SequenceFileViewMgr.ConnectSequenceList&quot;SequenceFileViewMgr_ConnectSequenceList_M.htm" />
+      <seealso cref="SequenceListConnection" />
+      <seealso cref="SequenceListConnections" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.SequenceFileViewMgrConnections.StepGroupList">
+      <summary>Collection of StepGroupListConnection objects.</summary>
+      <seealso cref="&quot;SequenceFileViewMgr.ConnectStepGroupList&quot;SequenceFileViewMgr_ConnectStepGroupList_M.htm" />
+      <seealso cref="StepGroupListConnection" />
+      <seealso cref="StepGroupListConnections" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.SequenceFileViewMgrConnections.SequenceView">
+      <summary>Collection of SequenceViewConnection objects.</summary>
+      <seealso cref="&quot;SequenceFileViewMgr.ConnectSequenceView&quot;SequenceFileViewMgr_ConnectSequenceView_M.htm" />
+      <seealso cref="SequenceViewConnection" />
+      <seealso cref="SequenceViewConnections" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.SequenceFileViewMgrConnections.Command">
+      <summary>Collection of CommandConnection objects.</summary>
+      <seealso cref="CommandConnection" />
+      <seealso cref="CommandConnections" />
+      <seealso cref="&quot;SequenceFileViewMgr.ConnectCommand&quot;SequenceFileViewMgr_ConnectCommand_M.htm" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.SequenceFileViewMgrConnections.Caption">
+      <summary>Collection of CaptionConnection objects.</summary>
+      <seealso cref="CaptionConnection" />
+      <seealso cref="CaptionConnections" />
+      <seealso cref="&quot;SequenceFileViewMgr.ConnectCaption&quot;SequenceFileViewMgr_ConnectCaption_M.htm" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.SequenceFileViewMgrConnections.Image">
+      <summary>Collection of ImageConnection objects.</summary>
+      <seealso cref="ImageConnection" />
+      <seealso cref="ImageConnections" />
+      <seealso cref="&quot;SequenceFileViewMgr.ConnectImage&quot;SequenceFileViewMgr_ConnectImage_M.htm" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.SequenceFileViewMgrConnections.InsertionPalettes">
+      <summary>Collection of InsertionPaletteConnection objects.</summary>
+      <seealso cref="InsertionPaletteConnection" />
+      <seealso cref="InsertionPaletteConnections" />
+      <seealso cref="SequenceFileViewMgr.ConnectInsertionPalette" />
+      <seealso cref="&#xD;&#xA;" />
+    </member>
+    <member name="T:NationalInstruments.TestStand.Interop.UI.Support.ExecutionViewConnection">
+      <summary>Represents a connection from an ExecutionView Manager control to an ExecutionViewMgrConnections.ExecutionView property. When tracing is enabled, the connected control shows the steps of the execution as they are executing. Use the ExecutionViewMgr.Connections property to obtain a collection of ExecutionViewConnection objects.</summary>
+      <seealso cref="&quot;ExecutionViewMgrConnections.ExecutionView&quot;ExecutionViewMgrConnections_ExecutionView_P.htm" />
+      <seealso cref="&quot;ExecutionView Manager&quot;ExecutionViewMgr.htm" />
+      <seealso cref="ExecutionViewConnections" />
+      <seealso cref="&quot;ExecutionViewMgr.Connections&quot;ExecutionViewMgr_Connections_P.htm" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.ExecutionViewConnection.ColorRunning">
+      <summary>Specifies the background color of the control when the execution in the ExecutionView Manager control is running. This setting is ignored when the value of the ExecutionViewConnection.Options property is <c>ExecutionViewConnection_IgnoreColors</c>.</summary>
+      <seealso cref="ExecutionViewConnection.Options" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.ExecutionViewConnection.ColorPaused">
+      <summary>Specifies the background color of the control when the execution in the ExecutionView Manager control is paused. This setting is ignored when the value of the ExecutionViewConnection.Options property is <c>ExecutionViewConnection_IgnoreColors</c>.</summary>
+      <seealso cref="ExecutionViewConnection.Options" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.ExecutionViewConnection.ColorStopped">
+      <summary>Specifies the background color of the control when the execution in the ExecutionView Manager control is stopped. This setting is ignored when the value of the ExecutionViewConnection.Options property is <c>ExecutionViewConnection_IgnoreColors</c>.</summary>
+      <seealso cref="ExecutionViewConnection.Options" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.ExecutionViewConnection.Options">
+      <summary>Specifies the behavior of the ExecutionViewConnection. The value of this property is a bitwise-OR combination of the ExecutionViewOptions constants.</summary>
+      <seealso cref="&quot;ExecutionViewOptions&quot;ExecutionViewOptions.htm" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.ExecutionViewConnection.UIControl">
+      <summary>Returns the user interface control the connection connects to an ExecutionView Manager control.</summary>
+      <seealso cref="&quot;ExecutionView Manager&quot;ExecutionViewMgr.htm" />
+    </member>
+    <member name="T:NationalInstruments.TestStand.Interop.UI.Support.ExecutionViewConnections">
+      <summary>A collection of ExecutionViewConnection objects you obtain by calling the ExecutionViewMgr.Connections property.</summary>
+      <seealso cref="ExecutionViewConnection" />
+      <seealso cref="&quot;ExecutionViewMgr.Connections&quot;ExecutionViewMgr_Connections_P.htm" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.ExecutionViewConnections.Item(System.Int32)">
+      <summary>Returns a reference to an item at the specified index in the collection.</summary>
+      <returns>Item located at the specified index.</returns>
+      <param name="itemIndex">Specifies the index of the item to retrieve.</param>
+      <seealso cref="ExecutionViewConnection" />
+      <seealso cref="ExecutionViewConnections.Count" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.ExecutionViewConnections.Count">
+      <summary>Returns the number of items in the collection.</summary>
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.ExecutionViewConnections.Add(System.Object)">
+      <summary>Creates and adds a new ExecutionViewConnection to the collection.</summary>
+      <returns>New ExecutionViewConnection.</returns>
+      <param name="uiObj">Specifies the user interface object to connect.</param>
+      <seealso cref="ExecutionViewConnections.Remove" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.ExecutionViewConnections.Remove(System.Object)">
+      <summary>Removes the specified item from this collection, if it exists.</summary>
+      <returns>Returns <c>True</c> when the ExecutionViewConnection is removed. Returns <c>False</c> when the ExecutionViewConnection is not found.</returns>
+      <param name="uiObj">Specifies the user interface object to disconnect.</param>
+      <seealso cref="ExecutionViewConnections.Add" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.ExecutionViewConnections.Clear">
+      <summary>Removes all items from the collection.</summary>
+      <seealso cref="ExecutionViewConnections.Remove" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.ExecutionViewConnections.FromControl(System.Object)">
+      <summary>Returns the ExecutionViewConnection that is connected to the uiObj parameter.</summary>
+      <returns>ExecutionViewConnection connected to the uiObj parameter. When no ExecutionViewConnection exists for this control, this method returns <c>NULL</c>.</returns>
+      <param name="uiObj">Specifies the connected user interface object.</param>
+    </member>
+    <member name="T:NationalInstruments.TestStand.Interop.UI.Support.CallStackConnection">
+      <summary>Represents a connection from the ExecutionView Manager control to a control that displays the callstack. You can use the connected control to change the selected sequence context when the execution is paused.
+<para>Note: This class currently contains no properties or methods. Properties or methods might be added to this class in future versions of TestStand.</para></summary>
+      <seealso cref="CallStackConnections" />
+      <seealso cref="&#xD;&#xA;&quot;ExecutionView Manager&quot;ExecutionViewMgr.htm" />
+    </member>
+    <member name="T:NationalInstruments.TestStand.Interop.UI.Support.CallStackConnections">
+      <summary>A collection of CallStackConnection objects.</summary>
+      <seealso cref="CallStackConnection" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.CallStackConnections.Item(System.Int32)">
+      <summary>Returns a reference to an item at the specified index in the collection.</summary>
+      <returns>Item located at the specified index.</returns>
+      <param name="itemIndex">Specifies the index of the item to retrieve.</param>
+      <seealso cref="CallStackConnection" />
+      <seealso cref="CallStackConnections.Count" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.CallStackConnections.Count">
+      <summary>Returns the number of items in the collection.</summary>
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.CallStackConnections.Add(System.Object)">
+      <summary>Creates and adds a new CallStackConnection to the collection.</summary>
+      <returns>New CallStackConnection.</returns>
+      <param name="uiObj">Specifies the user interface object to connect.</param>
+      <seealso cref="CallStackConnections.Remove" />
+      <seealso cref="&quot;ExecutionViewMgr.ConnectCallStack&quot;ExecutionViewMgr_ConnectCallStack_M.htm" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.CallStackConnections.Remove(System.Object)">
+      <summary>Removes the specified item from this collection, if it exists.</summary>
+      <returns>Returns <c>True</c> when the CallStackConnection is removed. Returns <c>False</c> when the CallStackConnection is not found.</returns>
+      <param name="uiObj">Specifies the user interface object to disconnect.</param>
+      <seealso cref="CallStackConnection" />
+      <seealso cref="CallStackConnections.Add" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.CallStackConnections.Clear">
+      <summary>Removes all items from the collection.</summary>
+      <seealso cref="CallStackConnections.Remove" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.CallStackConnections.FromControl(System.Object)">
+      <summary>Returns the CallStackConnection connected to the UI object.</summary>
+      <returns>CallStackConnection connected to this user interface object. When no CallStackConnection exists for this control, this method returns <c>NULL</c>.</returns>
+      <param name="uiObj">Specifies the connected user interface object.</param>
+    </member>
+    <member name="T:NationalInstruments.TestStand.Interop.UI.Support.ThreadListConnection">
+      <summary>Represents a connection from the ExecutionView Manager control to a control that displays the list of threads in the execution. You can use the connected control to display the foreground thread and to change the foreground thread when the execution is paused.
+<para>Note: This class currently contains no properties or methods. Properties or methods might be added to this class in future versions of TestStand.</para></summary>
+      <seealso cref="&quot;ExecutionView Manager&quot;ExecutionViewMgr.htm" />
+      <seealso cref="ThreadListConnections" />
+    </member>
+    <member name="T:NationalInstruments.TestStand.Interop.UI.Support.ThreadListConnections">
+      <summary>A collection of ThreadListConnection objects.</summary>
+      <seealso cref="&quot;ExecutionViewMgr.ConnectThreadList&quot;ExecutionViewMgr_ConnectThreadList_M.htm" />
+      <seealso cref="ThreadListConnection" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.ThreadListConnections.Item(System.Int32)">
+      <summary>Returns a reference to an item at the specified index in the collection.</summary>
+      <returns>Item located at the specified index.</returns>
+      <param name="itemIndex">Specifies the index of the item to retrieve.</param>
+      <seealso cref="ThreadListConnection" />
+      <seealso cref="ThreadListConnections.Count" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.ThreadListConnections.Count">
+      <summary>Returns the number of items in the collection.</summary>
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.ThreadListConnections.Add(System.Object)">
+      <summary>Creates and adds a new ThreadListConnection to the collection.</summary>
+      <returns>New ThreadListConnection.</returns>
+      <param name="uiObj">Specifies the user interface object to connect.</param>
+      <seealso cref="&quot;ExecutionViewMgr.ConnectThreadList&quot;ExecutionViewMgr_ConnectThreadList_M.htm" />
+      <seealso cref="ThreadListConnections.Remove" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.ThreadListConnections.Remove(System.Object)">
+      <summary>Removes the specified item from this collection, if it exists.</summary>
+      <returns>Returns <c>True</c> when the ThreadListConnection is removed. Returns <c>False</c> when the ThreadListConnection is not found.</returns>
+      <param name="uiObj">Specifies the user interface object to disconnect.</param>
+      <seealso cref="ThreadListConnections.Add" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.ThreadListConnections.Clear">
+      <summary>Removes all items from the collection.</summary>
+      <seealso cref="ThreadListConnections.Remove" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.ThreadListConnections.FromControl(System.Object)">
+      <summary>Returns the ThreadListConnection connected to the uiObj parameter.</summary>
+      <returns>ThreadListConnection connected to the uiObj parameter. When no ThreadListConnection exists for this control, this method returns <c>NULL</c>.</returns>
+      <param name="uiObj">Specifies the connected user interface object.</param>
+    </member>
+    <member name="T:NationalInstruments.TestStand.Interop.UI.Support.ExecutionListConnection">
+      <summary>Represents a connection from the ExecutionView Manager control to a control that displays the list of currently running executions. You can use the connected control to select an execution from the list of executions.</summary>
+      <seealso cref="ExecutionListConnections" />
+      <seealso cref="&#xD;&#xA;&quot;ExecutionView Manager&quot;ExecutionViewMgr.htm" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.ExecutionListConnection.ShowHiddenExecutions">
+      <summary>When this property is <c>True</c>, the execution list shows executions created with the <c>ExecTypeMask_InitiallyHidden</c> flag.</summary>
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.ExecutionListConnection.DisplayExpression">
+      <summary>Specifies how to display executions in the execution list using a format expression. By default, the value of this property is <c>&quot;%CurrentExecution%&quot;</c>. Refer to the CaptionSource_MacroExpression enumeration value for more information about types of caption sources.</summary>
+      <seealso cref="&quot;CaptionSource_MacroExpression&quot;CaptionSources.htm" />
+    </member>
+    <member name="T:NationalInstruments.TestStand.Interop.UI.Support.ExecutionListConnections">
+      <summary>A collection of ExecutionListConnection objects.</summary>
+      <seealso cref="ExecutionListConnection" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.ExecutionListConnections.Item(System.Int32)">
+      <summary>Returns a reference to an item at the specified index in the collection.</summary>
+      <returns>Item located at the specified index.</returns>
+      <param name="itemIndex">Specifies the index of the item to retrieve.</param>
+      <seealso cref="ExecutionListConnection" />
+      <seealso cref="ExecutionListConnections.Count" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.ExecutionListConnections.Count">
+      <summary>Returns the number of items in the collection.</summary>
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.ExecutionListConnections.Add(System.Object)">
+      <summary>Creates and adds a new ExecutionListConnection to the collection.</summary>
+      <returns>New ExecutionListConnection.</returns>
+      <param name="uiObj">Specifies the user interface object to connect.</param>
+      <seealso cref="ExecutionListConnections.Remove" />
+      <seealso cref="&quot;ExecutionViewMgr.ConnectExecutionList&quot;ExecutionViewMgr_ConnectExecutionList_M.htm" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.ExecutionListConnections.Remove(System.Object)">
+      <summary>Removes the specified item from this collection, if it exists.</summary>
+      <returns>Returns <c>True</c> when the ExecutionListConnection is removed. Returns <c>False</c> when the <c>ExecutionListConnection</c> is not found.</returns>
+      <param name="uiObj">Specifies the user interface object to disconnect.</param>
+      <seealso cref="ExecutionListConnection" />
+      <seealso cref="ExecutionListConnections.Add" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.ExecutionListConnections.Clear">
+      <summary>Removes all items from the collection.</summary>
+      <seealso cref="ExecutionListConnections.Remove" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.ExecutionListConnections.FromControl(System.Object)">
+      <summary>Returns the ExecutionListConnection connected to the uiObj parameter.</summary>
+      <returns>ExecutionListConnection connected to the uiObj parameter. When no ExecutionListConnection exists for this control, this method returns <c>NULL</c>.</returns>
+      <param name="uiObj">Specifies the connected user interface object.</param>
+    </member>
+    <member name="T:NationalInstruments.TestStand.Interop.UI.Support.ReportViewConnection">
+      <summary>Represents a connection from the ExecutionView Manager control to a control that displays a report associated with an execution.
+<para>Note: This class currently contains no properties or methods. Properties or methods might be added to this class in future versions of TestStand.</para></summary>
+      <seealso cref="&quot;ExecutionView Manager&quot;ExecutionViewMgr.htm" />
+      <seealso cref="ReportViewConnections" />
+    </member>
+    <member name="T:NationalInstruments.TestStand.Interop.UI.Support.ReportViewConnections">
+      <summary>A collection of ReportViewConnection objects.</summary>
+      <seealso cref="ReportViewConnection" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.ReportViewConnections.Item(System.Int32)">
+      <summary>Returns a reference to an item at the specified index in the collection.</summary>
+      <returns>Item located at the specified index.</returns>
+      <param name="itemIndex">Specifies the index of the item to retrieve.</param>
+      <seealso cref="ReportViewConnection" />
+      <seealso cref="ReportViewConnections.Count" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.ReportViewConnections.Count">
+      <summary>Returns the number of items in the collection.</summary>
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.ReportViewConnections.Add(System.Object)">
+      <summary>Creates and adds a new ReportViewConnection to the collection.</summary>
+      <returns>New ReportViewConnection.</returns>
+      <param name="uiObj">Specifies the user interface object to connect.</param>
+      <seealso cref="&quot;ExecutionViewMgr.ConnectReportView&quot;ExecutionViewMgr_ConnectReportView_M.htm" />
+      <seealso cref="ReportViewConnections.Remove" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.ReportViewConnections.Remove(System.Object)">
+      <summary>Removes the specified item from this collection, if it exists.</summary>
+      <returns>Returns <c>True</c> when the ReportViewConnection is removed. Returns <c>False</c> when the ReportViewConnection is not found.</returns>
+      <param name="uiObj">Specifies the user interface object to disconnect.</param>
+      <seealso cref="ReportViewConnections.Add" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.ReportViewConnections.Clear">
+      <summary>Removes all items from the collection.</summary>
+      <seealso cref="ReportViewConnections.Remove" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.ReportViewConnections.FromControl(System.Object)">
+      <summary>Returns the ReportViewConnection connected to the uiObj parameter.</summary>
+      <returns>ReportViewConnection connected to the uiObj parameter. When no ReportViewConnection exists for this control, this method returns <c>NULL</c>.</returns>
+      <param name="uiObj">Specifies the connected user interface object.</param>
+    </member>
+    <member name="T:NationalInstruments.TestStand.Interop.UI.Support.ExecutionViewMgrConnections">
+      <summary>Contains the connections for an ExecutionView Manager control.</summary>
+      <seealso cref="ApplicationMgrConnections" />
+      <seealso cref="&#xD;&#xA;&quot;ExecutionView Manager&quot;ExecutionViewMgr.htm" />
+      <seealso cref="SequenceFileViewMgrConnections" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.ExecutionViewMgrConnections.Variables">
+      <summary>Collection of VariablesConnection objects.</summary>
+      <seealso cref="ExecutionViewMgr.ConnectVariables" />
+      <seealso cref="VariablesConnection" />
+      <seealso cref="VariablesConnections" />
+      <seealso cref="&#xD;&#xA;&#xD;&#xA;" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.ExecutionViewMgrConnections.ExecutionView">
+      <summary>Collection of ExecutionViewConnection objects.</summary>
+      <seealso cref="ExecutionViewConnection" />
+      <seealso cref="ExecutionViewConnections" />
+      <seealso cref="&quot;ExecutionViewMgr.ConnectExecutionView&quot;ExecutionViewMgr_ConnectExecutionView_M.htm" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.ExecutionViewMgrConnections.ReportView">
+      <summary>Collection of ReportViewConnection objects.</summary>
+      <seealso cref="&quot;ExecutionViewMgr.ConnectReportView&quot;ExecutionViewMgr_ConnectReportView_M.htm" />
+      <seealso cref="ReportViewConnection" />
+      <seealso cref="ReportViewConnections" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.ExecutionViewMgrConnections.ExecutionList">
+      <summary>Collection of ExecutionListConnection objects.</summary>
+      <seealso cref="ExecutionListConnection" />
+      <seealso cref="ExecutionListConnections" />
+      <seealso cref="&quot;ExecutionViewMgr.ConnectExecutionList&quot;ExecutionViewMgr_ConnectExecutionList_M.htm" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.ExecutionViewMgrConnections.Command">
+      <summary>Collection of CommandConnection objects.</summary>
+      <seealso cref="CommandConnection" />
+      <seealso cref="CommandConnections" />
+      <seealso cref="&quot;ExecutionViewMgr.ConnectCommand&quot;ExecutionViewMgr_ConnectCommand_M.htm" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.ExecutionViewMgrConnections.Caption">
+      <summary>Collection of CaptionConnection objects.</summary>
+      <seealso cref="CaptionConnection" />
+      <seealso cref="CaptionConnections" />
+      <seealso cref="&quot;ExecutionViewMgr.ConnectCaption&quot;ExecutionViewMgr_ConnectCaption_M.htm" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.ExecutionViewMgrConnections.CallStack">
+      <summary>Collection of CallStackConnection objects.</summary>
+      <seealso cref="CallStackConnection" />
+      <seealso cref="CallStackConnections" />
+      <seealso cref="&quot;ExecutionViewMgr.ConnectCallStack&quot;ExecutionViewMgr_ConnectCallStack_M.htm" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.ExecutionViewMgrConnections.ThreadList">
+      <summary>Collection of ThreadListConnection objects.</summary>
+      <seealso cref="&quot;ExecutionViewMgr.ConnectThreadList&quot;ExecutionViewMgr_ConnectThreadList_M.htm" />
+      <seealso cref="ThreadListConnection" />
+      <seealso cref="ThreadListConnections" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.ExecutionViewMgrConnections.Image">
+      <summary>Collection of ImageConnection objects.</summary>
+      <seealso cref="&quot;ExecutionViewMgr.ConnectImage&quot;ExecutionViewMgr_ConnectImage_M.htm" />
+      <seealso cref="ImageConnection" />
+      <seealso cref="ImageConnections" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.ExecutionViewMgrConnections.Numeric">
+      <summary>Collection of NumericConnection objects.</summary>
+      <seealso cref="&quot;ExecutionViewMgr.ConnectNumeric&quot;ExecutionViewMgr_ConnectNumeric_M.htm" />
+      <seealso cref="NumericConnection" />
+      <seealso cref="NumericConnections" />
+    </member>
+    <member name="T:NationalInstruments.TestStand.Interop.UI.Support.ApplicationMgrConnections">
+      <summary>Contains the connections for an Application Manager control. Use the ApplicationMgr.Connections property to obtain a collection of ApplicationMgrConnections objects.</summary>
+      <seealso cref="&quot;Application Manager&quot;ApplicationMgr.htm" />
+      <seealso cref="&quot;ApplicationMgr.Connections&quot;ApplicationMgr_Connections_P.htm" />
+      <seealso cref="ExecutionViewMgrConnections" />
+      <seealso cref="SequenceFileViewMgrConnections" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.ApplicationMgrConnections.Command">
+      <summary>Collection of CommandConnection objects.</summary>
+      <seealso cref="&quot;ApplicationMgr.ConnectCommand&quot;ApplicationMgr_ConnectCommand_M.htm" />
+      <seealso cref="CommandConnection" />
+      <seealso cref="CommandConnections" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.ApplicationMgrConnections.Caption">
+      <summary>Collection of CaptionConnection objects.</summary>
+      <seealso cref="&quot;ApplicationMgr.ConnectCaption&quot;ApplicationMgr_ConnectCaption_M.htm" />
+      <seealso cref="CaptionConnection" />
+      <seealso cref="CaptionConnections" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.ApplicationMgrConnections.AdapterList">
+      <summary>Collection of AdapterListConnection objects.</summary>
+      <seealso cref="AdapterListConnection" />
+      <seealso cref="AdapterListConnections" />
+      <seealso cref="ApplicationMgr.ConnectAdapterList" />
+    </member>
+    <member name="T:NationalInstruments.TestStand.Interop.UI.Support.AdapterListConnection">
+      <summary>Represents a connection from an Application Manager control to a control that displays the list of adapters. Use the connected control to select an adapter to which to set the Engine.DefaultAdapter property.
+<para>Note: This class currently contains no properties or methods. Properties or methods might be added to this class in future versions of TestStand.</para></summary>
+      <seealso cref="&quot;Application Manager&quot;ApplicationMgr.htm" />
+      <seealso cref="AdapterListConnections" />
+      <seealso cref="&quot;Engine.DefaultAdapter&quot;javascript:APILink('/RefTopics/Engine_DefaultAdapter_P.htm')" />
+    </member>
+    <member name="T:NationalInstruments.TestStand.Interop.UI.Support.AdapterListConnections">
+      <summary>A collection of AdapterListConnection objects.</summary>
+      <seealso cref="AdapterListConnection" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.AdapterListConnections.Item(System.Int32)">
+      <summary>Returns a reference to an item at the specified index in the collection.</summary>
+      <param name="itemIndex">Specifies the zero-based index of the item to retrieve.</param>
+      <seealso cref="AdapterListConnection" />
+      <seealso cref="AdapterListConnections.Count" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.AdapterListConnections.Count">
+      <summary>Returns the number of items in the collection.</summary>
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.AdapterListConnections.Add(System.Object)">
+      <summary>Creates and adds a new AdapterListConnection to the collection.</summary>
+      <returns>The AdapterListConnection this method creates.</returns>
+      <param name="uiObj">Specifies the user interface object to connect.</param>
+      <seealso cref="AdapterListConnection" />
+      <seealso cref="AdapterListConnections.Remove" />
+      <seealso cref="ApplicationMgr.ConnectAdapterList" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.AdapterListConnections.Remove(System.Object)">
+      <summary>Removes the specified item from this collection, if it exists.</summary>
+      <returns>Returns <c>True</c> when the AdapterListConnection is removed. Returns <c>False</c> when the AdapterListConnection is not found.</returns>
+      <param name="uiObj">Specifies the user interface object to disconnect.</param>
+      <seealso cref="AdapterListConnection" />
+      <seealso cref="AdapterListConnections.Add" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.AdapterListConnections.Clear">
+      <summary>Removes all items from the collection.</summary>
+      <seealso cref="AdapterListConnections.Remove" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.AdapterListConnections.FromControl(System.Object)">
+      <summary>Returns the AdapterListConnection connected to the uiObj parameter. When no AdapterListConnection is connected to the user interface object the parameter specifies, this method returns <c>NULL</c>.</summary>
+      <param name="uiObj">Specifies a connected user interface object.</param>
+      <seealso cref="AdapterListConnection" />
+    </member>
+    <member name="T:NationalInstruments.TestStand.Interop.UI.Support.VariablesConnection">
+      <summary>Represents a connection from a SequenceFileView Manager or ExecutionView Manager control to a VariablesView control.</summary>
+      <seealso cref="&quot;ExecutionView Manager&quot;ExecutionViewMgr.htm" />
+      <seealso cref="&quot;SequenceFileView Manager&quot;SequenceFileViewMgr.htm" />
+      <seealso cref="&quot;VariablesView&quot;VariablesView.htm" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.VariablesConnection.UIControl">
+      <summary>Returns the user interface control that the connection connects to a SequenceFileView Manager or ExecutionView Manager control.</summary>
+      <seealso cref="ExecutionViewMgr" />
+      <seealso cref="SequenceFileViewMgr" />
+    </member>
+    <member name="T:NationalInstruments.TestStand.Interop.UI.Support.VariablesConnections">
+      <summary>A collection of VariablesConnection objects.</summary>
+      <seealso cref="ExecutionViewMgr.ConnectVariables" />
+      <seealso cref="SequenceFileViewMgr.ConnectVariables" />
+      <seealso cref="VariablesConnection" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.VariablesConnections.Item(System.Int32)">
+      <summary>Returns a reference to an item at the specified index in the collection.</summary>
+      <returns>Item located at the specified index.</returns>
+      <param name="itemIndex">Specifies a zero-based index of the item to retrieve.</param>
+      <seealso cref="VariablesConnection" />
+      <seealso cref="VariablesConnections.Count" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.VariablesConnections.Count">
+      <summary>Returns the number of items in the collection.</summary>
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.VariablesConnections.Add(System.Object)">
+      <summary>Creates and adds a new VariablesConnection to the collection.</summary>
+      <returns>New VariablesConnection object.</returns>
+      <param name="uiObj">Specifies the user interface object to connect.</param>
+      <seealso cref="ExecutionViewMgr.ConnectVariables" />
+      <seealso cref="SequenceFileViewMgr.ConnectVariables" />
+      <seealso cref="VariablesConnections.Remove" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.VariablesConnections.Remove(System.Object)">
+      <summary>Removes the specified item from this collection, if it exists.</summary>
+      <returns>Returns <c>True</c> when the VariablesConnection is removed. Returns <c>False</c> when the VariablesConnection is not found.</returns>
+      <param name="uiObj">Specifies the user interface object to disconnect.</param>
+      <seealso cref="VariablesConnection" />
+      <seealso cref="VariablesConnections.Add" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.VariablesConnections.Clear">
+      <summary>Removes all items from the collection.</summary>
+      <seealso cref="VariablesConnections.Remove" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.VariablesConnections.FromControl(System.Object)">
+      <summary>Returns the VariablesConnection connected to the uiObj parameter.</summary>
+      <returns>VariablesConnection connected to the uiObj parameter. When no VariablesConnection exists for this control, this method returns <c>NULL</c>.</returns>
+      <param name="uiObj">Specifies the connected user interface object.</param>
+    </member>
+    <member name="T:NationalInstruments.TestStand.Interop.UI.Support.SelectedSequences">
+      <summary>A collection of selected sequences. You can obtain a reference to the collection from the SequenceFileViewMgr.SelectedSequences property.</summary>
+      <seealso cref="&quot;SequenceFileViewMgr.SelectedSequences&quot;SequenceFileViewMgr_SelectedSequences_P.htm" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.SelectedSequences.Item(System.Int32)">
+      <summary>Returns a reference to an item at the specified index in the collection.</summary>
+      <returns>The sequence at the specified index in the collection.</returns>
+      <param name="itemIndex">Specifies the index of the item to retrieve.</param>
+      <seealso cref="&quot;Sequence&quot;javascript:APILink('/RefTopics/Sequence.htm')" />
+      <seealso cref="SelectedSequences.Count" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.SelectedSequences.Count">
+      <summary>Returns the number of items in the collection.</summary>
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.SelectedSequences.Clear">
+      <summary>Removes all items from the collection.</summary>
+      <seealso cref="SelectedSequences.AddSequence" />
+      <seealso cref="SelectedSequences.AddSequences" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.SelectedSequences.AddSequence(NationalInstruments.TestStand.Interop.API.Sequence)">
+      <summary>Adds a sequence to the SelectedSequences collection.</summary>
+      <param name="val">Specifies the sequence to add.</param>
+      <seealso cref="SelectedSequences.AddSequences" />
+      <seealso cref="SelectedSequences.Clear" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.SelectedSequences.AddSequences(System.Object[])">
+      <summary>Adds an array of sequences to the SelectedSequences collection.</summary>
+      <param name="val">Specifies the array of sequences to add.</param>
+      <seealso cref="SelectedSequences.AddSequence" />
+      <seealso cref="SelectedSequences.Clear" />
+      <seealso cref="&#xD;&#xA;" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.SelectedSequences.BeginUpdate">
+      <summary>Call this method before making multiple changes to the SelectedSequences collection. When you finish changing the collection, call the SelectedSequences.EndUpdate method to update the TestStand User Interface (UI) Controls according to the changes.</summary>
+      <remarks>Use this method to minimize redrawing in the TestStand UI Controls when you programmatically change the selection.</remarks>
+      <seealso cref="SelectedSequences.EndUpdate" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.SelectedSequences.EndUpdate">
+      <summary>Updates the user interface according to all changes to the SelectedSequences collection you make after a previous call to the SelectedSequences.BeginUpdate method.</summary>
+      <seealso cref="SelectedSequences.BeginUpdate" />
+    </member>
+    <member name="T:NationalInstruments.TestStand.Interop.UI.Support.InsertionPaletteConnection">
+      <summary>Represents a connection from a SequenceFileView Manager control to an InsertionPalette control. The InsertionPalette control displays a list of step types and a list of user defined template steps, sequences, and variables. Use the connected control to insert a step, sequence, or variable into a sequence file.</summary>
+      <seealso cref="&quot;InsertionPalette&quot;InsertionPalette.htm" />
+      <seealso cref="&quot;SequenceFileView Manager&quot;SequenceFileViewMgr.htm" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.InsertionPaletteConnection.UIControl">
+      <summary>Returns the user interface control the connection connects to a SequenceFileView Manager control.</summary>
+      <seealso cref="SequenceFileViewMgr" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.InsertionPaletteConnection.StepTypesPage">
+      <summary>Specifies the index of the Step Types page in the InsertionPalettePages collection.</summary>
+      <seealso cref="InsertionPaletteConnection.TemplatesPage" />
+      <seealso cref="&quot;InsertionPalettePage&quot;InsertionPalettePage.htm" />
+      <seealso cref="&quot;InsertionPalettePages&quot;InsertionPalettePages.htm" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.InsertionPaletteConnection.TemplatesPage">
+      <summary>Specifies the index of the Templates page in the InsertionPalettePages collection.</summary>
+      <seealso cref="InsertionPaletteConnection.StepTypesPage" />
+      <seealso cref="&quot;InsertionPalettePage&quot;InsertionPalettePage.htm" />
+      <seealso cref="&quot;InsertionPalettePages&quot;InsertionPalettePages.htm" />
+    </member>
+    <member name="T:NationalInstruments.TestStand.Interop.UI.Support.InsertionPaletteConnections">
+      <summary>A collection of InsertionPaletteConnection objects.</summary>
+      <seealso cref="InsertionPaletteConnection" />
+      <seealso cref="&quot;SequenceFileViewMgr.ConnectInsertionPalette&quot;SequenceFileViewMgr_ConnectInsertionPalette_M.htm" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.InsertionPaletteConnections.Item(System.Int32)">
+      <summary>Returns a reference to an item at the specified index in the collection.</summary>
+      <returns>Item located at the specified index.</returns>
+      <param name="itemIndex">Specifies the zero-based index of the item to retrieve.</param>
+      <seealso cref="InsertionPaletteConnection" />
+      <seealso cref="InsertionPaletteConnections.Count" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.InsertionPaletteConnections.Count">
+      <summary>Returns the number of items in the collection.</summary>
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.InsertionPaletteConnections.Add(System.Object)">
+      <summary>Creates and adds a new InsertionPaletteConnection to the collection.</summary>
+      <returns>New InsertionPaletteConnection object.</returns>
+      <param name="uiObj">Specifies the user interface object to connect.</param>
+      <seealso cref="ExecutionViewMgr.ConnectVariables" />
+      <seealso cref="InsertionPaletteConnections.Remove" />
+      <seealso cref="SequenceFileViewMgr.ConnectVariables" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.InsertionPaletteConnections.Remove(System.Object)">
+      <summary>Removes the specified item from this collection, if it exists.</summary>
+      <returns>Returns <c>True</c> when the InsertionPaletteConnection is removed. Returns <c>False</c> when the InsertionPaletteConnection is not found.</returns>
+      <param name="uiObj">Specifies the user interface object to disconnect.</param>
+      <seealso cref="InsertionPaletteConnections.Add" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.InsertionPaletteConnections.Clear">
+      <summary>Removes all items from the collection.</summary>
+      <seealso cref="InsertionPaletteConnections.Remove" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.InsertionPaletteConnections.FromControl(System.Object)">
+      <summary>Returns the InsertionPaletteConnection connected to the uiObj parameter.</summary>
+      <returns>InsertionPaletteConnection connected to this user interface object. When no InsertionPaletteConnection exists for this control, this method returns <c>NULL</c>.</returns>
+      <param name="uiObj">Specifies the connected user interface object.</param>
+    </member>
+    <member name="T:NationalInstruments.TestStand.Interop.UI.Support.SelectedPropertyObjects">
+      <summary>A collection of selected property objects. Controls connected to the SequenceFileView Manager and ExecutionView Manager controls, such as the VariablesView, automatically update the collection while active. You can obtain a reference to the collection from the SequenceFileViewMgr.SelectedPropertyObjects and ExecutionViewMgr.SelectedPropertyObjects properties.</summary>
+      <seealso cref="&quot;ExecutionViewMgr&quot;ExecutionViewMgr.htm" />
+      <seealso cref="&quot;ExecutionViewMgr.SelectedPropertyObjects&quot;ExecutionViewMgr_SelectedPropertyObjects_P.htm" />
+      <seealso cref="&quot;SequenceFileViewMgr&quot;SequenceFileViewMgr.htm" />
+      <seealso cref="&quot;SequenceFileViewMgr.SelectedPropertyObjects&quot;SequenceFileViewMgr_SelectedPropertyObjects_P.htm" />
+      <seealso cref="&quot;VariablesView&quot;VariablesView.htm" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.SelectedPropertyObjects.Item(System.Int32)">
+      <summary>Returns a reference to an item at the specified index in the collection.</summary>
+      <param name="itemIndex">Specifies a zero-based index of the item to retrieve.</param>
+      <seealso cref="&quot;PropertyObject&quot;javascript:APILink('/RefTopics/PropertyObject.htm')" />
+      <seealso cref="SelectedPropertyObjects.Count" />
+    </member>
+    <member name="P:NationalInstruments.TestStand.Interop.UI.Support.SelectedPropertyObjects.Count">
+      <summary>Returns the number of items in the collection.</summary>
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.SelectedPropertyObjects.Clear">
+      <summary>Removes all items from the collection.</summary>
+      <seealso cref="SelectedPropertyObjects.AddPropertyObject" />
+      <seealso cref="SelectedPropertyObjects.AddPropertyObjects" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.SelectedPropertyObjects.AddPropertyObject(NationalInstruments.TestStand.Interop.API.PropertyObject)">
+      <summary>Adds a property object to the collection.</summary>
+      <param name="val">Specifies the property object to add.</param>
+      <seealso cref="SelectedPropertyObjects.Clear" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.SelectedPropertyObjects.AddPropertyObjects(System.Object[])">
+      <summary>Adds an array of property objects to the collection.</summary>
+      <param name="val">Specifies the property objects to add.</param>
+      <seealso cref="SelectedPropertyObjects.Clear" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.SelectedPropertyObjects.BeginUpdate">
+      <summary>Call this method before you make multiple changes to the SelectedPropertyObjects collection. When you finish changing the collection, call the SelectedPropertyObjects.EndUpdate method to update the TestStand User Interface (UI) Controls according to the changes.</summary>
+      <remarks>Use this method to minimize redrawing in the TestStand UI Controls when you programmatically change the selection.</remarks>
+      <seealso cref="SelectedPropertyObjects.EndUpdate" />
+    </member>
+    <member name="M:NationalInstruments.TestStand.Interop.UI.Support.SelectedPropertyObjects.EndUpdate">
+      <summary>Updates the TestStand User Interface Controls according to the SelectedPropertyObjects collection changes you make after you call the SelectedPropertyObjects.BeginUpdate method.</summary>
+      <seealso cref="SelectedPropertyObjects.BeginUpdate" />
+    </member>
+    <member name="T:NationalInstruments.TestStand.Interop.UI.Support.SeqListConnectionColumns">
+      <summary>These constants represent the column type you can use with the column parameter of the  SequenceListConnection.SetColumnVisible and SequenceListConnection.GetColumnVisible methods.</summary>
+      <seealso cref="SequenceListConnection.GetColumnVisible" />
+      <seealso cref="SequenceListConnection.SetColumnVisible" />
+    </member>
+    <member name="F:NationalInstruments.TestStand.Interop.UI.Support.SeqListConnectionColumns.SeqListConnectionColumn_Label">
+      <summary>(Value: 0) Specifies the column that contains the name of the sequence.</summary>
+    </member>
+    <member name="F:NationalInstruments.TestStand.Interop.UI.Support.SeqListConnectionColumns.SeqListConnectionColumn_Comments">
+      <summary>(Value: 1) Specifies the column that contains the comment of the sequence.</summary>
+    </member>
+    <member name="F:NationalInstruments.TestStand.Interop.UI.Support.SeqListConnectionColumns.SeqListConnectionColumn_Requirements">
+      <summary>(Value: 2) Specifies the column that contains the requirements of the sequence.</summary>
+    </member>
+    <member name="T:NationalInstruments.TestStand.Interop.UI.Support.SelectionFlags">
+      <summary>Use these constants to select step group start or end markers and to expand or collapse step groups. These constants apply only when the application displays more than one step group at a time.
+You cannot select step group start and end markers when steps are selected. You cannot select steps and step group end markers in collapsed step groups.
+</summary>
+      <seealso cref="ExecutionViewMgr.SelectedSteps" />
+      <seealso cref="ExecutionViewMgr.StepGroupMode" />
+      <seealso cref="SelectedSteps.SelectionFlags" />
+      <seealso cref="SequenceFileViewMgr.SelectedSteps" />
+      <seealso cref="SequenceFileViewMgr.StepGroupMode" />
+    </member>
+    <member name="F:NationalInstruments.TestStand.Interop.UI.Support.SelectionFlags.SelectionFlag_NoFlags">
+      <summary>(Value: 0) No collapsed step group and no selected step group markers.</summary>
+    </member>
+    <member name="F:NationalInstruments.TestStand.Interop.UI.Support.SelectionFlags.SelectionFlag_SetupStartSelected">
+      <summary>(Value: 1) Selects the start marker for the Setup step group.</summary>
+    </member>
+    <member name="F:NationalInstruments.TestStand.Interop.UI.Support.SelectionFlags.SelectionFlag_MainStartSelected">
+      <summary>(Value: 2) Selects the start marker for the Main step group.</summary>
+    </member>
+    <member name="F:NationalInstruments.TestStand.Interop.UI.Support.SelectionFlags.SelectionFlag_CleanupStartSelected">
+      <summary>(Value: 4) Selects the start marker for the Cleanup step group.</summary>
+    </member>
+    <member name="F:NationalInstruments.TestStand.Interop.UI.Support.SelectionFlags.SelectionFlag_SetupEndSelected">
+      <summary>(Value: 8) Selects the end marker for the Setup step group.</summary>
+    </member>
+    <member name="F:NationalInstruments.TestStand.Interop.UI.Support.SelectionFlags.SelectionFlag_MainEndSelected">
+      <summary>(Value: 16) Selects the end marker for the Main step group.</summary>
+    </member>
+    <member name="F:NationalInstruments.TestStand.Interop.UI.Support.SelectionFlags.SelectionFlag_CleanupEndSelected">
+      <summary>(Value: 32) Selects the end marker for the Cleanup step group.</summary>
+    </member>
+    <member name="F:NationalInstruments.TestStand.Interop.UI.Support.SelectionFlags.SelectionFlag_SetupCollapsed">
+      <summary>(Value: 64) Collapses the Setup step group.</summary>
+    </member>
+    <member name="F:NationalInstruments.TestStand.Interop.UI.Support.SelectionFlags.SelectionFlag_MainCollapsed">
+      <summary>(Value: 128) Collapses the Main step group.</summary>
+    </member>
+    <member name="F:NationalInstruments.TestStand.Interop.UI.Support.SelectionFlags.SelectionFlag_CleanupCollapsed">
+      <summary>(Value: 256) Collapses the Cleanup step group.</summary>
+    </member>
+  </members>
+</doc>

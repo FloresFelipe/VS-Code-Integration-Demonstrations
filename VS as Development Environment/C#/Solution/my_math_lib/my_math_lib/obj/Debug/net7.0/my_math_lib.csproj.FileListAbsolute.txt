@@ -1,0 +1,12 @@
+c:\Users\fflores\projects\my_math_lib\my_math_lib\obj\Debug\net7.0\my_math_lib.csproj.AssemblyReference.cache
+c:\Users\fflores\projects\my_math_lib\my_math_lib\obj\Debug\net7.0\my_math_lib.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\fflores\projects\my_math_lib\my_math_lib\obj\Debug\net7.0\my_math_lib.AssemblyInfoInputs.cache
+c:\Users\fflores\projects\my_math_lib\my_math_lib\obj\Debug\net7.0\my_math_lib.AssemblyInfo.cs
+c:\Users\fflores\projects\my_math_lib\my_math_lib\obj\Debug\net7.0\my_math_lib.csproj.CoreCompileInputs.cache
+c:\Users\fflores\projects\my_math_lib\my_math_lib\bin\Debug\net7.0\my_math_lib.deps.json
+c:\Users\fflores\projects\my_math_lib\my_math_lib\bin\Debug\net7.0\my_math_lib.dll
+c:\Users\fflores\projects\my_math_lib\my_math_lib\bin\Debug\net7.0\my_math_lib.pdb
+c:\Users\fflores\projects\my_math_lib\my_math_lib\obj\Debug\net7.0\my_math_lib.dll
+c:\Users\fflores\projects\my_math_lib\my_math_lib\obj\Debug\net7.0\refint\my_math_lib.dll
+c:\Users\fflores\projects\my_math_lib\my_math_lib\obj\Debug\net7.0\my_math_lib.pdb
+c:\Users\fflores\projects\my_math_lib\my_math_lib\obj\Debug\net7.0\ref\my_math_lib.dll

@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NationalInstruments.TestStand.Interop.API, Version=22.0.0.49152, Culture=neutral, PublicKeyToken=ad9244eb3b825cd8, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files\National Instruments\TestStand 2022\API\DotNET\Assemblies\CurrentVersion\NationalInstruments.TestStand.Interop.API.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="NationalInstruments.TestStand.Interop.UI, Version=22.0.0.49152, Culture=neutral, PublicKeyToken=ad9244eb3b825cd8, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files\National Instruments\TestStand 2022\API\DotNET\Assemblies\CurrentVersion\NationalInstruments.TestStand.Interop.UI.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="NationalInstruments.TestStand.Utility, Version=22.0.0.49152, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files\National Instruments\TestStand 2022\Bin\NationalInstruments.TestStand.Utility.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Sequence File\**">
+    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+</Project>

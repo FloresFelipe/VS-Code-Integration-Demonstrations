@@ -1,0 +1,80 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "seq_runner/1.0.0": {
+        "dependencies": {
+          "NationalInstruments.TestStand.Interop.API": "22.0.0.49152",
+          "NationalInstruments.TestStand.Interop.UI": "22.0.0.49152",
+          "NationalInstruments.TestStand.Utility": "22.0.0.49152"
+        },
+        "runtime": {
+          "seq_runner.dll": {}
+        }
+      },
+      "NationalInstruments.TestStand.Interop.API/22.0.0.49152": {
+        "runtime": {
+          "NationalInstruments.TestStand.Interop.API.dll": {
+            "assemblyVersion": "22.0.0.49152",
+            "fileVersion": "22.0.0.49152"
+          }
+        }
+      },
+      "NationalInstruments.TestStand.Interop.UI/22.0.0.49152": {
+        "runtime": {
+          "NationalInstruments.TestStand.Interop.UI.dll": {
+            "assemblyVersion": "22.0.0.49152",
+            "fileVersion": "22.0.0.49152"
+          }
+        }
+      },
+      "NationalInstruments.TestStand.Utility/22.0.0.49152": {
+        "runtime": {
+          "NationalInstruments.TestStand.Utility.dll": {
+            "assemblyVersion": "22.0.0.49152",
+            "fileVersion": "22.0.0.49152"
+          }
+        }
+      },
+      "NationalInstruments.TestStand.Interop.UI.Support/22.0.0.49152": {
+        "runtime": {
+          "NationalInstruments.TestStand.Interop.UI.Support.dll": {
+            "assemblyVersion": "22.0.0.49152",
+            "fileVersion": "22.0.0.49152"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "seq_runner/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NationalInstruments.TestStand.Interop.API/22.0.0.49152": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NationalInstruments.TestStand.Interop.UI/22.0.0.49152": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NationalInstruments.TestStand.Utility/22.0.0.49152": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NationalInstruments.TestStand.Interop.UI.Support/22.0.0.49152": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

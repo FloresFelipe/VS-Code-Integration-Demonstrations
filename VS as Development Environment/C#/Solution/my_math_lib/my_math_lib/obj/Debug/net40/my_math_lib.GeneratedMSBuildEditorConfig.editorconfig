@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = my_math_lib
+build_property.ProjectDir = c:\Users\fflores\projects\my_math_lib\my_math_lib\

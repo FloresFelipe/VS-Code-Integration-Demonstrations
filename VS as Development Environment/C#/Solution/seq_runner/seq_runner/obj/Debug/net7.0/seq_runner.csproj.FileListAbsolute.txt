@@ -1,0 +1,24 @@
+C:\Users\fflores\projects\seq_runner\seq_runner\bin\Debug\net7.0\seq_runner.exe
+C:\Users\fflores\projects\seq_runner\seq_runner\bin\Debug\net7.0\seq_runner.deps.json
+C:\Users\fflores\projects\seq_runner\seq_runner\bin\Debug\net7.0\seq_runner.runtimeconfig.json
+C:\Users\fflores\projects\seq_runner\seq_runner\bin\Debug\net7.0\seq_runner.dll
+C:\Users\fflores\projects\seq_runner\seq_runner\bin\Debug\net7.0\seq_runner.pdb
+C:\Users\fflores\projects\seq_runner\seq_runner\bin\Debug\net7.0\NationalInstruments.TestStand.Interop.API.dll
+C:\Users\fflores\projects\seq_runner\seq_runner\bin\Debug\net7.0\NationalInstruments.TestStand.Interop.UI.dll
+C:\Users\fflores\projects\seq_runner\seq_runner\bin\Debug\net7.0\NationalInstruments.TestStand.Utility.dll
+C:\Users\fflores\projects\seq_runner\seq_runner\bin\Debug\net7.0\NationalInstruments.TestStand.Interop.UI.Support.dll
+C:\Users\fflores\projects\seq_runner\seq_runner\bin\Debug\net7.0\NationalInstruments.TestStand.Interop.API.xml
+C:\Users\fflores\projects\seq_runner\seq_runner\bin\Debug\net7.0\NationalInstruments.TestStand.Interop.UI.xml
+C:\Users\fflores\projects\seq_runner\seq_runner\bin\Debug\net7.0\NationalInstruments.TestStand.Interop.UI.Support.xml
+C:\Users\fflores\projects\seq_runner\seq_runner\obj\Debug\net7.0\seq_runner.csproj.AssemblyReference.cache
+C:\Users\fflores\projects\seq_runner\seq_runner\obj\Debug\net7.0\seq_runner.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fflores\projects\seq_runner\seq_runner\obj\Debug\net7.0\seq_runner.AssemblyInfoInputs.cache
+C:\Users\fflores\projects\seq_runner\seq_runner\obj\Debug\net7.0\seq_runner.AssemblyInfo.cs
+C:\Users\fflores\projects\seq_runner\seq_runner\obj\Debug\net7.0\seq_runner.csproj.CoreCompileInputs.cache
+C:\Users\fflores\projects\seq_runner\seq_runner\obj\Debug\net7.0\seq_runner.csproj.CopyComplete
+C:\Users\fflores\projects\seq_runner\seq_runner\obj\Debug\net7.0\seq_runner.dll
+C:\Users\fflores\projects\seq_runner\seq_runner\obj\Debug\net7.0\refint\seq_runner.dll
+C:\Users\fflores\projects\seq_runner\seq_runner\obj\Debug\net7.0\seq_runner.pdb
+C:\Users\fflores\projects\seq_runner\seq_runner\obj\Debug\net7.0\seq_runner.genruntimeconfig.cache
+C:\Users\fflores\projects\seq_runner\seq_runner\obj\Debug\net7.0\ref\seq_runner.dll
+c:\Users\fflores\projects\seq_runner\seq_runner\bin\Debug\net7.0\Sequence File\Test.seq

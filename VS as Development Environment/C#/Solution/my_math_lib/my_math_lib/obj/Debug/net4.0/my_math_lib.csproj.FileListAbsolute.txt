@@ -1,0 +1,5 @@
+c:\Users\fflores\projects\my_math_lib\my_math_lib\obj\Debug\net4.0\my_math_lib.csproj.AssemblyReference.cache
+c:\Users\fflores\projects\my_math_lib\my_math_lib\obj\Debug\net4.0\my_math_lib.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\fflores\projects\my_math_lib\my_math_lib\obj\Debug\net4.0\my_math_lib.AssemblyInfoInputs.cache
+c:\Users\fflores\projects\my_math_lib\my_math_lib\obj\Debug\net4.0\my_math_lib.AssemblyInfo.cs
+c:\Users\fflores\projects\my_math_lib\my_math_lib\obj\Debug\net4.0\my_math_lib.csproj.CoreCompileInputs.cache
