@@ -1,27 +1,30 @@
-# Developing and Debugging C# Code with VS Code
+# Developing and Debugging PowerShell Scripts with VS Code
 
 ## Goal
 
-In this tutorial, you'll learn how to use VS Code to create python scripts that can integrate with TestStand and LabVIEW and also how to consume web services from SystemLink.
+Briefly describe the goal or purpose of your document. Explain what the reader will learn or achieve by following the instructions provided.
 
 ## Prerequisites
 
 List any prerequisites or requirements that readers should have before starting the tutorial.
 
-- Install [TestStand 2022 Q4](https://www.ni.com/en/support/downloads/software-products/download.teststand.html#467601).
-- Install the [Python Extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python).
+- Install [Software/Tool Name](link_to_installation_page).
+- Install [Extension Name](link_to_extension_page).
+- ...
 
-> **Note:** The **NI TestStand Support for Debugging Python Code** created by NI to allow you to debug python modules using VS Code is installed when you use the TestStand version selector and click **Activate** or **Configure** on TestStand 2021 SP1.
+> **Note:** Additional notes or information that might be relevant to the prerequisites can be mentioned here.
 
 ## Index
 
-- [Developing and debugging Python code modules for TestStand](#developing-and-debugging-python-code-modules-for-teststand)
-- [Debugging code called from Python node in LabVIEW](#debugging-code-called-from-python-node-in-labview)
-- [Consuming SystemLink web services using the Requests module](#consume-systemlink-web-services-using-the-requests-module)
+Provide a list of sections or topics covered in your document. Include links to the corresponding sections for easy navigation.
+
+- [Section 1: Title](#section-1-title)
+- [Section 2: Title](#section-2-title)
+- ...
 
 ---
 
-### Developing and debugging Python code modules for TestStand
+### Section 1: Title
 
 Provide a brief introduction or description of the topic covered in this section.
 
@@ -37,7 +40,7 @@ Provide a brief introduction or description of the topic covered in this section
 
 ---
 
-### Debugging code called from Python node in LabVIEW
+### Section 2: Title
 
 Provide a brief introduction or description of the topic covered in this section.
 
@@ -52,21 +55,7 @@ Provide a brief introduction or description of the topic covered in this section
 > **Note:** Include any relevant notes, warnings, or tips that readers should be aware of during this section.
 
 ---
-### Consuming SystemLink web services using the Requests module
 
-Provide a brief introduction or description of the topic covered in this section.
-
-1. Step 1 description.
-    - Detailed instructions.
-    - Optional sub-steps if needed.
-    - Any additional notes or tips.
-
-2. Step 2 description.
-    - ...
-
-> **Note:** Include any relevant notes, warnings, or tips that readers should be aware of during this section.
-
----
 ### Troubleshooting
 
 If there are common issues or challenges that readers might encounter, list them here along with possible solutions or workarounds.
