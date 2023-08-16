@@ -17,6 +17,7 @@ class Debug:
         import os
         import ctypes
         ctypes.windll.user32.MessageBoxW(None, "Process name: niPythonHost.exe and Process ID: " + str(os.getpid()), "Attach debugger", 0)
+        return os.getpid()
         
 
 class Math:
@@ -49,3 +50,5 @@ class Math:
         float or int: The product of a and b.
         """
         return a * b
+    
+    
