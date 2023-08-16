@@ -13,3 +13,5 @@ This tutorial series demonstrates various use cases for integrating Visual Studi
 
 - [C#](vscode-as-development-environment/csharp/readme.md)
 - [C++](vscode-as-development-environment/cpp/readme.md)
+- [Python](vscode-as-development-environment/python/readme.md)
+
