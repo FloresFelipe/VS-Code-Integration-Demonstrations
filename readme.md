@@ -6,12 +6,12 @@ This tutorial series demonstrates various use cases for integrating Visual Studi
 
 ### VS Code as a Text Editor
 
-- [Analyzing NI Configuration Files](vscode-as-a-text-editor/analyzing-config-files/readme.md)
-- [Analyzing SystemLink Support Reports](vscode-as-a-text-editor/analyzing-systemLink-support-report/readme.md)
+- [Analyzing NI Configuration Files](vscode-as-a-text-editor/analyzing-config-files/)
+- [Analyzing SystemLink Support Reports](vscode-as-a-text-editor/analyzing-systemLink-support-report/)
 
 ### VS Code as a Development Environment
 
-- [C#](vscode-as-development-environment/csharp/readme.md)
-- [C++](vscode-as-development-environment/cpp/readme.md)
-- [Python](vscode-as-development-environment/python/readme.md)
+- [C#](vscode-as-development-environment/csharp/)
+- [C++](vscode-as-development-environment/cpp/)
+- [Python](vscode-as-development-environment/python/)
 
