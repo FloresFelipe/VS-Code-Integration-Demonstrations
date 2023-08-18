@@ -2,6 +2,8 @@
 
 ## Goal
 
+This talks pretty much about debugging JS code that is used in JSLI for G Web Dev.
+
 Briefly describe the goal or purpose of your document. Explain what the reader will learn or achieve by following the instructions provided.
 
 ## Prerequisites
@@ -56,7 +58,7 @@ Provide a brief introduction or description of the topic covered in this section
 
 ---
 
-### Troubleshooting
+## Troubleshooting
 
 If there are common issues or challenges that readers might encounter, list them here along with possible solutions or workarounds.
 
@@ -68,7 +70,7 @@ If there are common issues or challenges that readers might encounter, list them
 
 ---
 
-### Conclusion
+## Conclusion
 
 Summarize what the reader has learned from the document and how they can apply the knowledge gained.
 
@@ -76,13 +78,14 @@ Summarize what the reader has learned from the document and how they can apply t
 
 ---
 
-### Additional Resources
+## Additional Resources
 
 List any additional resources, references, or links that readers might find useful or interesting.
 
-- [Link 1](URL)
-- [Link 2](URL)
-- ...
+- [Using JavaScript with a Web Application](https://www.ni.com/docs/en-US/bundle/g-web-development/page/javascript-web-application.html)
+- [JavaScript in Visual Studio Code](https://code.visualstudio.com/docs/languages/javascript)
+- [Customize WebVIs with CSS](https://ni.github.io/webvi-examples/CustomizeWithCss/Builds/WebApp_Default%20Web%20Server/)
+- [Customizing the Appearance of Controls in a WebVI](https://www.ni.com/docs/en-US/bundle/g-web-development/page/customizing-appearance-controls-webvi.html)
 
 ---
 
