@@ -24,8 +24,6 @@ TestStand offers two approaches to debugging python modules: Stepping into a Pyt
 
 ## Index
 
-Provide a list of sections or topics covered in your document with links for easy navigation.
-
 - [Stepping into Python Modules](#stepping-into-python-modules)
 - [Attaching to the niPythonHost process](#attaching-to-the-nipythonhost-process)
 - [Troubleshooting](#troubleshooting)
