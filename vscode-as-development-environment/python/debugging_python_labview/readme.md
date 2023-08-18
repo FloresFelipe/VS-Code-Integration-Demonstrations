@@ -18,8 +18,6 @@ List any prerequisites or requirements that readers should have before starting 
 
 ## Index
 
-Provide a list of sections or topics covered in your document. Include links to the corresponding sections for easy navigation.
-
 - [Debugging Code Called from Python Node in LabVIEW](#debugging-code-called-from-python-node-in-labview)
 
 ---

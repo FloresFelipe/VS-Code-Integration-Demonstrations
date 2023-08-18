@@ -6,7 +6,7 @@ This tutorial aims to guide you through the process of analyzing configuration f
 
 ## Prerequisites
 
-- Install Visual Studio Code.
+- Install [Visual Studio Code](https://code.visualstudio.com/download).
 - Install the [XML Tools Extension](https://marketplace.visualstudio.com/items?itemName=DotJoshJohnson.xml).
 - Install the [Ini for VSCode Extension](https://marketplace.visualstudio.com/items?itemName=DavidWang.ini-for-vscode).
 
@@ -19,7 +19,9 @@ This tutorial aims to guide you through the process of analyzing configuration f
 
 ### Analyzing the TestStand Configuration Files
 
-Start by briefly describing the TestStand `cfg` folder. Obtain information from the TestStand help resources.
+TestStand stores configuration filesin the <TestStand Application Data>\Cfg and <TestStand Application Data>\Cfg\ModelPlugins directories. Click on [this link](https://www.ni.com/docs/en-US/bundle/teststand/page/tsdeploysystem/infotopics/configurationfiles.htm) for a list of commonly modified configuration files, with the information TestStand stores in those files, and whether to include those configuration files in a deployment.
+
+Now, let's open one of these folders and use VS code to analyze the files.
 
 1. Navigate to the `<TestStandAppData>\Cfg` folder.
 2. Open the extracted folder. Right-click and select "Open with VS Code".
