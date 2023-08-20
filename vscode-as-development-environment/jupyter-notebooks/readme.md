@@ -8,11 +8,10 @@ Briefly describe the goal or purpose of your document. Explain what the reader w
 
 List any prerequisites or requirements that readers should have before starting the tutorial.
 
-- Install [Software/Tool Name](link_to_installation_page).
-- Install [Extension Name](link_to_extension_page).
-- ...
+- Install [VS Code](link_to_installation_page).
+- Install [Jupyter Notebooks](link_to_extension_page) extension.
+- Access to a [SystemLink Enterprise](url) instance.
 
-> **Note:** Additional notes or information that might be relevant to the prerequisites can be mentioned here.
 
 ## Index
 
@@ -107,12 +106,12 @@ List any additional resources, references, or links that readers might find usef
 - [Link 2](URL)
 - ...
 
+
 ---
 
-**License:** Specify the license information for your document (if applicable).
+**Feedback:** Help us improve this tutorial. Please provide feedback, report issues, or suggest enhancements. :smiley:
 
-**Feedback:** Encourage readers to provide feedback, report issues, or suggest improvements.
+**Author:** Felipe Flores, Senior Technical Support Engineer at NI.
 
-**Author:** Provide information about the author or organization.
+**Last Updated:** August 15th, 2023.
 
-**Last Updated:** Include the date of the last update or revision to the document.
