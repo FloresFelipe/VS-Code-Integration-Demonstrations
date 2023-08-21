@@ -6,7 +6,7 @@ This tutorial aims to enhance log file analysis using Visual Studio Code's text 
 
 SystemLink Reports serve as the primary starting point for troubleshooting SystemLink issues. Once you've obtained the report by following the steps in the [Generate a SystemLink Technical Support Report](https://knowledge.ni.com/KnowledgeArticleDetails?id=kA03q000000YGpmCAG&l=en-US) KB article, you can leverage Visual Studio Code (VS Code) to open and analyze its contents.
 
----
+
 ## Prerequisites
 
 - Install the latest version of [Visual Studio Code](https://code.visualstudio.com/download).
@@ -14,13 +14,13 @@ SystemLink Reports serve as the primary starting point for troubleshooting Syste
 
 > **Note:** While the instructions are provided for Windows, the process is similar for Mac and Linux.
 
----
+
 ## Index
 
 - [Setting up VS Code for Log Analysis](#setting-up-vs-code-for-log-analysis)
 - [Effective Strategies for Log Analysis](#effective-strategies-for-log-analysis)
 
----
+
 ## Setting up VS Code for Log Analysis
 
 1. Extract the `SystemLink_support_mm-dd-yy.zip` file to your preferred location.
@@ -85,7 +85,7 @@ These preset Log File Highlighter settings are designed to color custom log file
 7. Save the settings file.
 8. Open one of the log files; you'll notice that the text is now highlighted with distinct colors, making relevant information stand out.
 
----
+
 ## Effective Strategies for Log Analysis
 
 Proficiently navigating the realm of SystemLink Technical Support Reports can often prove to be a challenging task. Within these reports lie an array of folders housing log files, each adhering to different standards and containing thousands of lines of intricately detailed technical data. A standard report encompasses logs from various components, including:
@@ -131,13 +131,13 @@ Harness the capabilities of the VS Code Search Tool `(Ctrl+Shift+F)` to streamli
 
 By incorporating these strategic approaches and adhering to a methodical approach, you are primed to unlock the mysteries concealed within these logs.
 
----
+
 ## Conclusion
 
 Extracting pertinent information from the SystemLink Technical Support Report can indeed pose a challenge. It's important to remember that this process is often a vital step in troubleshooting, even though it might not always lead directly to the root cause of the issue. However, employing the appropriate analysis techniques will certainly bring you closer to identifying the underlying factors. This not only simplifies the task for subject matter experts and developers, but also has a positive ripple effect on resolution time and overall customer satisfaction. A powerful tool like VS Code seamlessly enhances this workflow.
 
 
----
+
 ## Additional Resources
 
 For more information and references, check out these resources:
@@ -145,7 +145,7 @@ For more information and references, check out these resources:
 - [Search across files - VS Code User Guide](https://code.visualstudio.com/docs/editor/codebasics#_search-across-files)
 - [SystemLink Log File Locations for Troubleshooting](https://knowledge.ni.com/KnowledgeArticleDetails?id=kA00Z000000kGcSSAU&l=en-US)
 
----
+
 **Feedback:** Help us improve this tutorial by providing feedback, reporting issues, or suggesting enhancements. :smiley:
 
 **Author:** Felipe Flores, Senior Technical Support Engineer at NI.

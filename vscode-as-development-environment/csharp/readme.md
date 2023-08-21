@@ -29,7 +29,7 @@ Note: The C# Extension provides base support under the MIT License, while the C#
 - [Conclusion](#conclusion)
 - [Additional Resources](#additional-resources)
 
----
+
 
 ### Building a C# Class Library
 
@@ -102,7 +102,7 @@ namespace MyMathLib
 </p>
 
 
----
+
 
 ### Debugging the Code Module Called by TestStand
 
@@ -135,7 +135,7 @@ Learn how to debug a code module called by TestStand.
   <img src="images/DebuggingNET.gif" />
 </p>
 
----
+
 
 ### Creating a C# CLI Application with the TestStand API
 
@@ -267,7 +267,7 @@ namespace seq_runner
 </p>
 
 
----
+
 
 #### Debugging
 
@@ -282,7 +282,7 @@ Debug your code by following these steps:
 </p>
 
 
----
+
 
 ### Troubleshooting
 
@@ -294,13 +294,13 @@ Address common issues and challenges that readers may encounter.
 - **Issue 2:** Description of the issue.
   - Solution or workaround.
 
----
+
 
 ### Conclusion
 
 This tutorial demonstrated how to develop and debug C# modules for TestStand using Visual Studio Code. You can now confidently work with C# DLLs and create C# code that interacts with the TestStand API. By targeting the supported .NET Framework version, you can seamlessly integrate C# components into TestStand projects.
 
----
+
 
 ### Additional Resources
 
@@ -311,7 +311,7 @@ Find more information and resources to enhance your C# development with TestStan
 - [.NET Adapter - TestStand Help](https://www.ni.com/docs/en-US/bundle/teststand/page/tsref/infotopics/net.htm)
 - [TestStand API Reference Help](https://www.ni.com/docs/en-US/bundle/teststand/page/tsapiref/infotopics/teststand_api.html)
 
----
+
 
 **Feedback:** Help us improve this tutorial. Please provide feedback, report issues, or suggest enhancements. :smiley:
 

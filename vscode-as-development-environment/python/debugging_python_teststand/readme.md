@@ -29,7 +29,7 @@ TestStand offers two approaches to debugging python modules: Stepping into a Pyt
 - [Troubleshooting](#troubleshooting)
 - [Conclusion](#conclusion)
 
----
+
 
 ### Stepping into Python Modules
 
@@ -151,7 +151,7 @@ The animation below illustrates steps 15 to 19.
   <img src="../images/debugging_python_module.gif" />
 </p>
 
----
+
 
 ### Attaching to the niPythonHost process
 
@@ -193,7 +193,7 @@ In this tutorial, we'll use the **Debug** class to obtain the niPythonHost proce
 
 > **Challenge:** Try repeating this process for the **Multiply** class.
 
----
+
 
 ### Troubleshooting
 
@@ -205,7 +205,7 @@ Here are some common issues readers might encounter, along with possible solutio
 - **Issue 2:** Description of the issue.
     - Solution or workaround.
 
----
+
 
 ### Conclusion
 
@@ -213,7 +213,7 @@ In this document, you've learned how to develop and debug Python code modules in
 
 > **Note:** Feel free to explore additional features and tools in both TestStand and VS Code to enhance your Python development workflow.
 
----
+
 
 ### Additional Resources
 
@@ -223,7 +223,7 @@ For more information and references, check out these resources:
 - [Debugging Python Modules](https://www.ni.com/docs/en-US/bundle/teststand/page/tsref/infotopics/debugging_python_module.html)
 - [Python Debugging in VS Code](https://code.visualstudio.com/docs/python/debugging)
 
----
+
 
 **Feedback:** Help us improve this tutorial by providing feedback, reporting issues, or suggesting enhancements. :smiley:
 

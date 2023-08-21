@@ -8,7 +8,7 @@ Briefly describe the goal or purpose of your document. Explain what the reader w
 
 List any prerequisites or requirements that readers should have before starting the tutorial.
 
-- Install [VS Code](link_to_installation_page).
+- Install [Visual Studio Code](link_to_installation_page).
 - Install [Jupyter Notebooks](link_to_extension_page) extension.
 - Access to a [SystemLink Enterprise](url) instance.
 
@@ -17,11 +17,10 @@ List any prerequisites or requirements that readers should have before starting 
 
 Provide a list of sections or topics covered in your document. Include links to the corresponding sections for easy navigation.
 
-- [Section 1: Title](#section-1-title)
-- [Section 2: Title](#section-2-title)
-- ...
+- [Setup Remote Jupyter Development for SystemLink Enterprise](#setup-remote-jupyter-development-for-systemlink-enterprise)
+- [Setup Remote Jupyter Development for SystemLink Server](#setup-remote-jupyter-development-for-systemlink-server)
 
----
+
 
 ### Setup Remote Jupyter Development for SystemLink Enterprise
 
@@ -73,7 +72,7 @@ The animation below reproduces steps 7 to 10.
 >- The token within the provided URL has a limited lifespan. When your current user session ends (due to logging out or the pod being deleted for inactivity), a new token will replace the old one. You can always retrieve a new token by following the first step mentioned.
 >- If you need a token that remains valid across multiple logins, you can go to "File" -> "Hub Control Panel" and then click on "Token" in the upper left corner of the page. Generate new tokens there and replace the existing one in the URL (replace everything after "?token=" with the new token).
 
----
+
 ### Setup Remote Jupyter Development for SystemLink Server
 
 > Note: There is not a validated set of steps for this yet. I'll update this article as soon as I have it.
@@ -88,7 +87,7 @@ If there are common issues or challenges that readers might encounter, list them
 - **Issue 2:** Description of the issue.
     - Solution or workaround.
 
----
+
 
 ## Conclusion
 
@@ -96,7 +95,7 @@ VS Code streamlines your Jupyter Notebook for SystemLink Enterprise (SLE) develo
 
 
 
----
+
 
 ## Additional Resources
 
@@ -107,7 +106,7 @@ List any additional resources, references, or links that readers might find usef
 - ...
 
 
----
+
 
 **Feedback:** Help us improve this tutorial. Please provide feedback, report issues, or suggest enhancements. :smiley:
 

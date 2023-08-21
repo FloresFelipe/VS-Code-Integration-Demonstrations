@@ -16,5 +16,11 @@ This tutorial series demonstrates various use cases for integrating Visual Studi
 - [Python](vscode-as-development-environment/python/readme.md)
 - [Jupyter Notebooks](vscode-as-development-environment/jupyter-notebooks/readme.md)
 - [Javascript](vscode-as-development-environment/javascript/readme.md)
+- [PowerShell](vscode-as-development-environment/powershell/readme.md)
 
 
+**Feedback:** Help us improve this tutorial. Please provide feedback, report issues, or suggest enhancements. :smiley:
+
+**Author:** Felipe Flores, Senior Technical Support Engineer at NI.
+
+**Last Updated:** August 21th, 2023.

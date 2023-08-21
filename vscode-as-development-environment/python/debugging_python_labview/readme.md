@@ -20,7 +20,7 @@ List any prerequisites or requirements that readers should have before starting 
 
 - [Debugging Code Called from Python Node in LabVIEW](#debugging-code-called-from-python-node-in-labview)
 
----
+
 
 ## Debugging Code Called from Python Node in LabVIEW
 
@@ -112,7 +112,7 @@ def show_process_id():
 
 19. You can now use the VS Code debugging tools to analyze your Python code.
 
----
+
 
 ### Troubleshooting
 
@@ -124,7 +124,7 @@ If there are common issues or challenges that readers might encounter, list them
 - **Issue 2:** Description of the issue.
     - Solution or workaround.
 
----
+
 
 ### Conclusion
 
@@ -132,7 +132,7 @@ Debugging code called from a Python node in LabVIEW involves a combination of to
 
 
 
----
+
 ### Additional Resources
 
 List any additional resources, references, or links that readers might find useful or interesting.
@@ -141,7 +141,7 @@ List any additional resources, references, or links that readers might find usef
 - [Python Debugging in VS Code](https://code.visualstudio.com/docs/python/debugging)
 
 
----
+
 
 **Feedback:** Help us improve this tutorial by providing feedback, reporting issues, or suggesting enhancements. :smiley:
 

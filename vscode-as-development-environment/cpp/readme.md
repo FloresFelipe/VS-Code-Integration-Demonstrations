@@ -22,7 +22,7 @@ Learn the process of setting up VSCode for C/C++ development and debugging a Dyn
 - [Conclusion](#conclusion)
 - [Additional Resources](#additional-resources)
 
----
+
 
 ## Setting up the VS Code Environment
 
@@ -188,19 +188,19 @@ If there are common issues or challenges that readers might encounter, list them
 
   - Follow the steps of [Running VS Code Outside a Developer Command Prompt](https://code.visualstudio.com/docs/cpp/config-msvc#_run-vs-code-outside-the-developer-command-prompt).
 
----
+
 
 ### Conclusion
 
 In this tutorial, you learned how to setup VS Code to develope and debug a C++ DLL that can be called from LabVIEW or TestStand. This is the base knowledge you need to either support a customer who has problems with their DLLs, or even create example codes that can be properly tested for integrtion with LabvIEW or TestStand.
 
----
+
 
 ### Additional Resources
 
 - [FAQ for C/C++ Development in VS Code](https://code.visualstudio.com/docs/cpp/faq-cpp)
 
----
+
 
 **Feedback:** Feel free to suggest improvements to this article.
 

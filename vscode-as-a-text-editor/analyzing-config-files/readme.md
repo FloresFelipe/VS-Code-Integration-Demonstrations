@@ -15,7 +15,7 @@ This tutorial aims to guide you through the process of analyzing configuration f
 - [Analyzing the TestStand Configuration Files](#analyzing-the-teststand-configuration-files)
 - [Analyzing LabVIEW.ini](#analyzing-labviewini)
 
----
+
 
 ### Analyzing the TestStand Configuration Files
 
@@ -57,7 +57,7 @@ Now, let's open one of these folders and use VS code to analyze the files.
 
 > **Note:** VS Code won't display binary files. If you encounter one, VS Code will notify you that it's unable to display a binary file.
 
----
+
 
 ### Analyzing LabVIEW.ini
 
