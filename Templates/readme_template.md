@@ -56,7 +56,7 @@ Provide a brief introduction or description of the topic covered in this section
 
 
 
-### Troubleshooting
+## Troubleshooting
 
 If there are common issues or challenges that readers might encounter, list them here along with possible solutions or workarounds.
 
@@ -68,7 +68,7 @@ If there are common issues or challenges that readers might encounter, list them
 
 
 
-### Conclusion
+## Conclusion
 
 Summarize what the reader has learned from the document and how they can apply the knowledge gained.
 
@@ -76,7 +76,7 @@ Summarize what the reader has learned from the document and how they can apply t
 
 
 
-### Additional Resources
+## Additional Resources
 
 List any additional resources, references, or links that readers might find useful or interesting.
 
@@ -86,10 +86,8 @@ List any additional resources, references, or links that readers might find usef
 
 
 
-**License:** Specify the license information for your document (if applicable).
+**Feedback:** Help us improve this tutorial. Please provide feedback, report issues, or suggest enhancements. :smiley:
 
-**Feedback:** Encourage readers to provide feedback, report issues, or suggest improvements.
+**Author:** Felipe Flores, Senior Technical Support Engineer at NI.
 
-**Author:** Provide information about the author or organization.
-
-**Last Updated:** Include the date of the last update or revision to the document.
+**Last Updated:** 

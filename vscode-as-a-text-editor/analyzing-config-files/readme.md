@@ -68,3 +68,32 @@ In contrast to TestStand, creating a workspace for the INI file isn't necessary.
 2. The file should be parsed by the Ini for VSCode Extension. If it isn't, you can click the current associated file type on the status bar at the bottom of the UI, then type "ini" and press enter. The file should now be parsed as an INI file.
 
 3. Utilize the Outline section or the navigation bar to explore the file's sections and keys.
+
+## Troubleshooting
+
+If there are common issues or challenges that readers might encounter, list them here along with possible solutions or workarounds.
+
+- **Issue 1:** Description of the issue.
+    - Solution or workaround.
+
+- **Issue 2:** Description of the issue.
+    - Solution or workaround.
+
+
+
+## Conclusion
+
+In this tutorial, you've learned how to effectively analyze configuration files from LabVIEW and TestStand using Visual Studio Code. By setting up the appropriate extensions and workspace settings, you can easily navigate and understand the content of these configuration files. Visual Studio Code provides a versatile and user-friendly environment for exploring these files, helping you gain insights into your LabVIEW and TestStand setups. Armed with this knowledge, you'll be better equipped to manage and fine-tune your system configurations efficiently.
+
+### Additional Resources
+
+- [Configuration Files](https://www.ni.com/docs/en-US/bundle/teststand/page/tsdeploysystem/infotopics/configurationfiles.htm)
+- [LabVIEW configuration file](https://labviewwiki.org/wiki/LabVIEW_configuration_file) - Not NI Official
+- [File Associations](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_file-associations) - VS Code Docs
+
+
+**Feedback:** Help us improve this tutorial. Please provide feedback, report issues, or suggest enhancements. :smiley:
+
+**Author:** Felipe Flores, Senior Technical Support Engineer at NI.
+
+**Last Updated:** August 15th, 2023.
