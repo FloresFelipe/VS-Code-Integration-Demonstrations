@@ -2,11 +2,9 @@
 
 ## Goal
 
-Briefly describe the goal or purpose of your document. Explain what the reader will learn or achieve by following the instructions provided.
+This document will walk you through the process of linking your local VSCode environment to a remote Jupyter Application installation that comes with SystemLink Enterprise. By establishing this connection, you can utilize the debugging features of VSCode to develop and troubleshoot your notebooks, allowing you to view the outcomes locally before transferring the analysis script to the server. While you will be creating and modifying the notebook on your local machine, the code execution occurs on the remote Python kernel, enabling you to access all SystemLink-specific modules without the need for local installation.
 
 ## Prerequisites
-
-List any prerequisites or requirements that readers should have before starting the tutorial.
 
 - Install [Visual Studio Code](link_to_installation_page).
 - Install [Jupyter Notebooks](link_to_extension_page) extension.
@@ -15,11 +13,8 @@ List any prerequisites or requirements that readers should have before starting 
 
 ## Index
 
-Provide a list of sections or topics covered in your document. Include links to the corresponding sections for easy navigation.
-
 - [Setup Remote Jupyter Development for SystemLink Enterprise](#setup-remote-jupyter-development-for-systemlink-enterprise)
 - [Setup Remote Jupyter Development for SystemLink Server](#setup-remote-jupyter-development-for-systemlink-server)
-
 
 
 ### Setup Remote Jupyter Development for SystemLink Enterprise
@@ -36,11 +31,13 @@ SystemLink Enterprise (SLE) offers official support for remotely developing Jupy
 
 3. Copy the URL displayed on the pop-up dialog.
 
+__Note:__ the URL structure is `https://<server_url>/jupyterhub/user/<e_mail_username>/?token=<jupyter_specifc_token>`
+
 4. In VS Code, create a new workspace (folder) and save it as `programming_remote_jupyter`.
 
 5. Open the Command Palette (Ctrl+Shift+P) and Type `Create: New Jupyter Notebook`
 
-> Note: You don't actually need to type the whole command. If you type `New Jupy`the command will appear for you.
+> __Note:__ You don't actually need to type the whole command. If you type `New Jupy`the command will appear for you.
 
 6. Save the file as `test-remote-jupyter.py`.
 
@@ -75,17 +72,14 @@ The animation below reproduces steps 7 to 10.
 
 ### Setup Remote Jupyter Development for SystemLink Server
 
-> Note: There is not a validated set of steps for this yet. I'll update this article as soon as I have it.
+> __Note:__ There is not a validated set of steps for this yet. I'll update this article as soon as I have it.
 
 ### Troubleshooting
-
-If there are common issues or challenges that readers might encounter, list them here along with possible solutions or workarounds.
 
 - **Issue 1:** Connection fails in VS Code
     The pod might be inactive. The time in which a pod gets inactive is preset: 30 seconds if idle and no kernels open and 15 minutes if idle and at least one kernel open. You can ensure the pod doesn't get inactive by keeping open (and visible on the screen) the JupyterHub browser tab, as that is seen as activity.
 
-- **Issue 2:** Description of the issue.
-    - Solution or workaround.
+- **Issue 2:** You might run into errors when adding the connection string for the remote Kernel. If that happens, try to add the URL, username and password individually. `https://<server_url>/jupyterhub/user/<e_mail_username>/?token=<jupyter_specifc_token>`
 
 
 
@@ -94,23 +88,14 @@ If there are common issues or challenges that readers might encounter, list them
 VS Code streamlines your Jupyter Notebook for SystemLink Enterprise (SLE) development workflow. It seamlessly connects to the SLE's Jupyter server, allowing you to harness the power of SystemLink APIs. Additionally, VS Code provides an enhanced debugging environment and robust Source Code Control features.
 
 
-
-
-
 ## Additional Resources
 
-List any additional resources, references, or links that readers might find useful or interesting.
-
 - [Connect to a remote Jupyter server - VS Code Docs](https://code.visualstudio.com/docs/datascience/notebooks-web#:~:text=run%20your%20code.-,Connect%20to%20a%20remote%20Jupyter%20server,for%20your%20remote%20Jupyter%20server.)
-- [Link 2](URL)
-- ...
-
-
 
 
 **Feedback:** Help us improve this tutorial. Please provide feedback, report issues, or suggest enhancements. :smiley:
 
 **Author:** Felipe Flores, Senior Technical Support Engineer at NI.
 
-**Last Updated:** August 15th, 2023.
+**Last Updated:** November 21st, 2024.
 
