@@ -57,7 +57,7 @@ print(base_url)
 
 ```
 
-The string printed should be `https://test-api.lifecyclesolutions.ni.com` 
+The string printed should be `https://<your-sle-servere-address>` 
 
 The animation below reproduces steps 7 to 10.
 
