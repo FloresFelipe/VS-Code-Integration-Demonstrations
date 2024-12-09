@@ -39,7 +39,7 @@ __Note:__ the URL structure is `https://<server_url>/jupyterhub/user/<e_mail_use
 
 > __Note:__ You don't actually need to type the whole command. If you type `New Jupy`the command will appear for you.
 
-6. Save the file as `test-remote-jupyter.py`.
+6. Save the file as `test-remote-jupyter.ipynb`.
 
 7. With the Notebook open, notice that there is a Kernel Selector button at the upper-right hand corner. Click on it on **Select Another Kernel** and **Select Remote Kernel** at the top of VS Code UI.
 
