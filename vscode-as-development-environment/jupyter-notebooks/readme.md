@@ -6,9 +6,9 @@ This document will walk you through the process of linking your local VSCode env
 
 ## Prerequisites
 
-- Install [Visual Studio Code](link_to_installation_page).
-- Install [Jupyter Notebooks](link_to_extension_page) extension.
-- Access to a [SystemLink Enterprise](url) instance.
+- Install [Visual Studio Code](https://code.visualstudio.com/download).
+- Install [Jupyter Notebooks](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter) extension.
+- Access to a SystemLink Enterprise instance.
 
 
 ## Index
